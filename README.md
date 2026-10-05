@@ -54,7 +54,3 @@ Go to **Settings** > **WP Wordle** in the admin dashboard to:
 - View vocabulary size and inspect the active daily word.
 - Override the daily word manually for promotions or custom events.
 
-## License
-
-GPL-2.0 or later.
-
