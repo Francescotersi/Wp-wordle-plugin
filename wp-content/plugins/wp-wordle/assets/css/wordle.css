@@ -161,11 +161,9 @@
     line-height: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--nyt-text);
+    color: #ffffff !important;
     background-color: transparent;
     user-select: none;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 }
 
 .wp-wordle-tile[data-state="active"] {
@@ -189,31 +187,27 @@
     30%, 60%, 90% { transform: translateX(4px); }
 }
 
-.wp-wordle-tile.flip {
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-name: nytFlip;
+.wp-wordle-tile.flip-in {
+    animation: nytFlipIn 0.25s ease-in forwards;
 }
 
-.wp-wordle-row .wp-wordle-tile:nth-child(1).flip { animation-delay: 0ms; }
-.wp-wordle-row .wp-wordle-tile:nth-child(2).flip { animation-delay: 250ms; }
-.wp-wordle-row .wp-wordle-tile:nth-child(3).flip { animation-delay: 500ms; }
-.wp-wordle-row .wp-wordle-tile:nth-child(4).flip { animation-delay: 750ms; }
-.wp-wordle-row .wp-wordle-tile:nth-child(5).flip { animation-delay: 1000ms; }
+.wp-wordle-tile.flip-out {
+    animation: nytFlipOut 0.25s ease-out forwards;
+}
 
-@keyframes nytFlip {
+@keyframes nytFlipIn {
     0% {
         transform: rotateX(0deg);
         border-color: var(--nyt-filled-border);
-        background-color: transparent;
     }
-    45% {
+    100% {
         transform: rotateX(90deg);
         border-color: var(--nyt-filled-border);
-        background-color: transparent;
     }
-    55% {
+}
+
+@keyframes nytFlipOut {
+    0% {
         transform: rotateX(90deg);
     }
     100% {

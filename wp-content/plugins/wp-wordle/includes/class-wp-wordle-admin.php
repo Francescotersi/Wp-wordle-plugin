@@ -91,8 +91,8 @@ class WP_Wordle_Admin {
                 <code style="font-size: 1.1rem; padding: 4px 8px; background: #fff; border: 1px solid #ccd0d4; border-radius: 4px;">[wp_wordle]</code>
                 <p style="margin-top: 10px; font-size: 0.9rem; color: #555;">
                     <?php esc_html_e('Advanced options:', 'wp-wordle'); ?>
-                    <code>[wp_wordle lang="en"]</code> (inglese) &bull;
-                    <code>[wp_wordle mode="practice"]</code> (avvio in modalità allenamento)
+                    <code>[wp_wordle lang="en"]</code> (English) &bull;
+                    <code>[wp_wordle mode="practice"]</code> (start in practice mode)
                 </p>
             </div>
 

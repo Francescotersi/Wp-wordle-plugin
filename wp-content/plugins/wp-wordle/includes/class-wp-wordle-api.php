@@ -76,7 +76,7 @@ class WP_Wordle_API {
         if (strlen($guess) !== 5 || !ctype_alpha($guess)) {
             return new WP_Error(
                 'invalid_length',
-                __( 'The word must be composed of 5  letters.', 'wp-wordle' ),
+                __( 'Word must be 5 letters.', 'wp-wordle' ),
                 ['status' => 400]
             );
         }
@@ -84,7 +84,7 @@ class WP_Wordle_API {
         if (!WP_Wordle_Game::is_valid_word($guess, $lang)) {
             return new WP_Error(
                 'not_in_word_list',
-                __( 'Word missing in the dictionary.', 'wp-wordle' ),
+                __( 'Not in word list', 'wp-wordle' ),
                 ['status' => 400]
             );
         }
