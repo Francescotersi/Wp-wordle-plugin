@@ -1,0 +1,467 @@
+:root {
+    --nyt-bg: #121213;
+    --nyt-text: #ffffff;
+    --nyt-correct: #538d4e;
+    --nyt-present: #b59f3b;
+    --nyt-absent: #3a3a3c;
+    --nyt-empty-border: #3a3a3c;
+    --nyt-filled-border: #565758;
+    --nyt-key-bg: #818384;
+    --nyt-key-text: #ffffff;
+    --nyt-header-border: #2f2f31;
+    --nyt-modal-bg: #121213;
+    --nyt-toast-bg: #ffffff;
+    --nyt-toast-text: #000000;
+}
+
+.wp-wordle-wrapper {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 12px 16px 24px;
+    background-color: var(--nyt-bg);
+    color: var(--nyt-text);
+    border-radius: 8px;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+}
+
+.wp-wordle-wrapper * {
+    box-sizing: border-box;
+}
+
+/* --- HEADER IN STILE NYT --- */
+.wp-wordle-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4px 12px;
+    border-bottom: 1px solid var(--nyt-header-border);
+    margin-bottom: 16px;
+}
+
+.wp-wordle-modes {
+    display: flex;
+    gap: 8px;
+}
+
+.wp-wordle-mode-btn {
+    background: transparent;
+    border: 1px solid var(--nyt-header-border);
+    color: #818384;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.wp-wordle-mode-btn:hover {
+    color: #ffffff;
+    border-color: #565758;
+}
+
+.wp-wordle-mode-btn.active {
+    background: #272729;
+    color: #ffffff;
+    border-color: #818384;
+}
+
+.wp-wordle-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.wp-wordle-icon-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 4px 6px;
+    border-radius: 4px;
+    line-height: 1;
+    transition: transform 0.1s;
+}
+
+.wp-wordle-icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.wp-wordle-toast-container {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.wp-wordle-toast {
+    background-color: var(--nyt-toast-bg);
+    color: var(--nyt-toast-text);
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 12px 18px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    animation: nytToastAnim 2.2s ease forwards;
+    white-space: nowrap;
+}
+
+@keyframes nytToastAnim {
+    0%   { opacity: 0; transform: translateY(-8px); }
+    15%  { opacity: 1; transform: translateY(0); }
+    80%  { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-8px); }
+}
+
+.wp-wordle-board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    perspective: 1000px;
+}
+
+.wp-wordle-board {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    width: 325px;
+    height: 390px;
+}
+
+.wp-wordle-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.wp-wordle-tile {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--nyt-empty-border);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--nyt-text);
+    background-color: transparent;
+    user-select: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.wp-wordle-tile[data-state="active"] {
+    border-color: var(--nyt-filled-border);
+    animation: nytPop 0.1s ease-in-out;
+}
+
+@keyframes nytPop {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
+.wp-wordle-row.shake {
+    animation: nytShake 0.4s ease-in-out;
+}
+
+@keyframes nytShake {
+    0%, 100% { transform: translateX(0); }
+    15%, 45%, 75% { transform: translateX(-4px); }
+    30%, 60%, 90% { transform: translateX(4px); }
+}
+
+.wp-wordle-tile.flip {
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: nytFlip;
+}
+
+.wp-wordle-row .wp-wordle-tile:nth-child(1).flip { animation-delay: 0ms; }
+.wp-wordle-row .wp-wordle-tile:nth-child(2).flip { animation-delay: 250ms; }
+.wp-wordle-row .wp-wordle-tile:nth-child(3).flip { animation-delay: 500ms; }
+.wp-wordle-row .wp-wordle-tile:nth-child(4).flip { animation-delay: 750ms; }
+.wp-wordle-row .wp-wordle-tile:nth-child(5).flip { animation-delay: 1000ms; }
+
+@keyframes nytFlip {
+    0% {
+        transform: rotateX(0deg);
+        border-color: var(--nyt-filled-border);
+        background-color: transparent;
+    }
+    45% {
+        transform: rotateX(90deg);
+        border-color: var(--nyt-filled-border);
+        background-color: transparent;
+    }
+    55% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.wp-wordle-tile.correct {
+    background-color: var(--nyt-correct) !important;
+    border-color: var(--nyt-correct) !important;
+}
+
+.wp-wordle-tile.present {
+    background-color: var(--nyt-present) !important;
+    border-color: var(--nyt-present) !important;
+}
+
+.wp-wordle-tile.absent {
+    background-color: var(--nyt-absent) !important;
+    border-color: var(--nyt-absent) !important;
+}
+
+.wp-wordle-tile.win-bounce {
+    animation: nytWinBounce 0.5s ease-in-out;
+}
+.wp-wordle-row .wp-wordle-tile:nth-child(1).win-bounce {animation-delay: 0ms;}
+.wp-wordle-row .wp-wordle-tile:nth-child(2).win-bounce {animation-delay: 100ms;}
+.wp-wordle-row .wp-wordle-tile:nth-child(3).win-bounce {animation-delay: 200ms;}
+.wp-wordle-row .wp-wordle-tile:nth-child(4).win-bounce {animation-delay: 300ms;}
+.wp-wordle-row .wp-wordle-tile:nth-child(5).win-bounce {animation-delay: 400ms;}
+
+@keyframes nytWinBounce {
+    0%, 100% {transform: translateY(0);}
+    40%      {transform: translateY(-26px);}
+    60%      {transform: translateY(-8px);}
+}
+
+.wp-wordle-keyboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wp-wordle-kb-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    touch-action: manipulation;
+}
+
+.wp-wordle-key {
+    background-color: var(--nyt-key-bg);
+    color: var(--nyt-key-text);
+    border: none;
+    border-radius: 4px;
+    height: 58px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.15s ease, opacity 0.15s ease;
+    padding: 0;
+}
+
+.wp-wordle-key:active {
+    filter: brightness(0.85);
+}
+
+.wp-wordle-key-action {
+    flex: 1.5;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.wp-wordle-key.correct {
+    background-color: var(--nyt-correct);
+}
+
+.wp-wordle-key.present {
+    background-color: var(--nyt-present);
+}
+
+.wp-wordle-key.absent {
+    background-color: var(--nyt-absent);
+}
+
+.wp-wordle-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    z-index: 2000;
+}
+
+.wp-wordle-modal {
+    background: var(--nyt-modal-bg);
+    border: 1px solid var(--nyt-header-border);
+    border-radius: 8px;
+    padding: 24px;
+    width: 90%;
+    max-width: 420px;
+    color: var(--nyt-text);
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.4);
+}
+
+.wp-wordle-modal h3 {
+    margin: 0 0 16px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.wp-wordle-modal p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #d7dadc;
+    margin: 8px 0;
+}
+
+.wp-wordle-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: transparent;
+    border: none;
+    color: #818384;
+    font-size: 1.6rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.wp-wordle-modal-close:hover {
+    color: #ffffff;
+}
+
+.wp-wordle-help-examples {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.wp-wordle-example-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wp-wordle-example-row .wp-wordle-tile {
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.wp-wordle-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.wp-wordle-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wp-wordle-stat-num {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.wp-wordle-stat-label {
+    font-size: 0.75rem;
+    color: #818384;
+    text-align: center;
+}
+
+.wp-wordle-solution-word {
+    color: var(--nyt-correct);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    display: block;
+    margin-top: 4px;
+}
+
+.wp-wordle-stats-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.wp-wordle-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+}
+
+.wp-wordle-btn:hover {
+    opacity: 0.9;
+}
+
+.wp-wordle-btn-share {
+    background: var(--nyt-correct);
+    color: #ffffff;
+}
+
+.wp-wordle-btn-new {
+    background: #272729;
+    color: #ffffff;
+    border: 1px solid var(--nyt-header-border);
+}
+
+@media (max-width: 400px) {
+    .wp-wordle-board {
+        width: 280px;
+        height: 336px;
+    }
+    .wp-wordle-tile {
+        font-size: 1.7rem;
+    }
+    .wp-wordle-key {
+        height: 50px;
+        font-size: 1rem;
+    }
+}
