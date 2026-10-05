@@ -1,4 +1,4 @@
-service:
+services:
   mysql:
     image: mysql:8.4
     container_name: mysql
