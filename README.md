@@ -1,39 +1,39 @@
 # WP Wordle
 
-Plugin WordPress leggero e reattivo per integrare un gioco Wordle bilingue (Italiano e Inglese) direttamente nel tuo sito, con supporto per sfide giornaliere e allenamento libero.
+A lightweight, responsive WordPress plugin to embed a bilingual Wordle game (Italian & English) directly into your site, featuring daily challenges and unlimited practice mode.
 
-## 🚀 Installazione Rapida
+## 🚀 Quick Installation
 
-1. Copia la cartella del plugin in `/wp-content/plugins/wp-wordle`.
-2. Accedi alla bacheca di WordPress, vai su **Plugin** > **Plugin installati** e clicca su **Attiva**.
+1. Copy the plugin directory to `/wp-content/plugins/wp-wordle`.
+2. Go to WordPress Dashboard > **Plugins** > **Installed Plugins** and click **Activate**.
 
-## 🎮 Uso dello Shortcode
+## 🎮 Shortcode Usage
 
-Inserisci lo shortcode in qualsiasi pagina, articolo o blocco:
+Embed the game into any post, page, or widget block:
 
 ```text
 [wp_wordle]
 ```
 
-### Parametri Essenziali
+### Essential Parameters
 
-| Parametro | Valori | Default | Descrizione |
+| Parameter | Values | Default | Description |
 | :--- | :--- | :--- | :--- |
-| `theme` | slug del tema | `"brutalist"` | Stile grafico dell'interfaccia |
-| `lang` | `"it"` \| `"en"` | `"en"` | Lingua del gioco e del vocabolario |
-| `mode` | `"daily"` \| `"practice"` | `"daily"` | Sfida del giorno condivisa o allenamento illimitato |
+| `theme` | theme slug | `"brutalist"` | Visual theme for the game UI |
+| `lang` | `"it"` \| `"en"` | `"en"` | Vocabulary & game language |
+| `mode` | `"daily"` \| `"practice"` | `"daily"` | Shared daily challenge or unlimited practice mode |
 
-**Esempio combinato:**
+**Combined example:**
 ```text
 [wp_wordle theme="gameboy" lang="it" mode="daily"]
 ```
 
-## 🎨 Temi e Validazione Vocabolario
+## 🎨 Themes & Vocabulary Validation
 
-- **60 Temi CSS modulari (caricati on-demand):**  
+- **60 Modular CSS Themes (loaded on-demand):**  
   `brutalist` (default), `eink`, `editorial`, `swiss`, `nordic`, `blueprint`, `matrix`, `typewriter`, `matcha`, `monokai`, `terracotta`, `dracula`, `solarized-light`, `solarized-dark`, `chalkboard`, `synthwave`, `teletext`, `gameboy`, `desert`, `midnight-slate`, `leather`, `cyberpunk`, `vaporwave`, `steampunk`, `bauhaus`, `art-deco`, `amber-crt`, `win95`, `commodore64`, `cassette-futurism`, `stained-glass`, `parchment`, `retro-mac`, `lofi-chill`, `botanical`, `deep-ocean`, `volcanic`, `arctic`, `autumn`, `cherry-blossom`, `coffee-roast`, `comic-book`, `neo-noir`, `galaxy`, `claymation`, `graph-paper`, `postage-stamp`, `moroccan`, `tarot`, `wireframe`, `arcade-cabinet`, `newspaper`, `neon-tokyo`, `radium`, `origami`, `morse-telegraph`, `solar-flare`, `glitch`, `polaroid`, `baroque`.
 
-### 🖼️ Galleria Anteprime Temi
+### 🖼️ Theme Preview Gallery
 
 <table>
   <tr>
@@ -302,29 +302,29 @@ Inserisci lo shortcode in qualsiasi pagina, articolo o blocco:
   </tr>
 </table>
 
-### 🔍 Validazione Vocabolario & Anti-Spoiler
-  - **Italiano (IT):** Verifica live sul vocabolario ufficiale **Treccani** con memorizzazione automatica nella cache locale (`wp_wordle_learned_words_it`).
-  - **Inglese (EN):** Validazione tramite dizionario integrato e servizio Datamuse.
-  - **Sicurezza:** La soluzione è verificata via REST API lato server e non viene mai esposta nel codice sorgente del browser.
+### 🔍 Vocabulary Validation & Anti-Spoiler Protection
+- **Italian (IT):** Real-time verification against the official **Treccani** vocabulary with automatic local cache learning (`wp_wordle_learned_words_it`).
+- **English (EN):** Built-in curated dictionary with dynamic fallback and learning via the Datamuse API (`wp_wordle_learned_words_en`).
+- **Security & Anti-Spoiler:** Word evaluation is handled entirely server-side through the WordPress REST API; the secret solution is never leaked to the client browser prior to puzzle completion.
 
-## ⚙️ Configurazione in Bacheca
+## ⚙️ Admin Dashboard Settings
 
-Accedi a **Impostazioni** > **WP Wordle** per:
-- Scegliere il tema predefinito globale per il sito.
-- Impostare la lingua di default (Italiano / Inglese).
-- Forzare manualmente la parola del giorno (per contest o eventi speciali).
-- Verificare lo stato del vocabolario e consultare la soluzione attiva protetta da spoiler.
+Navigate to **Settings** > **WP Wordle** in the WordPress admin panel to:
+- Select the global default theme for your site.
+- Set the default game language (Italian / English).
+- Manually override the daily secret word (for contests, promotions, or special events).
+- Inspect dictionary caching status and check active solutions protected by spoiler toggles.
 
-## 🧪 Suite di Test
+## 🧪 Automated Test Suite
 
-Il plugin include una suite di test automatizzati completa (125 asserzioni) che verifica l'integrità dei vocabolari, tutti i 60 temi CSS, l'engine di gioco (IT & EN), l'integrazione online (Treccani & Datamuse), i controller REST API e i test d'integrazione containerizzati.
+The plugin comes with a comprehensive automated test suite (125 assertions) that verifies dictionary integrity, all 60 modular CSS themes, the game engine (IT & EN), live online dictionary services (Treccani & Datamuse), REST API controllers, and containerized Docker environment integration.
 
-Per eseguire l'intera suite di test:
+To run the complete test suite:
 ```bash
 php tests/test-all-plugin.php
 ```
 
-Per il test mirato del dizionario inglese e relative API online:
+To run the standalone English dictionary & API validation test:
 ```bash
 php tests/test-english-dictionary.php
 ```
