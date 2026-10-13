@@ -29,11 +29,12 @@ class WP_Wordle_API {
     }
 
     public function handle_start(WP_REST_Request $request) {
+        $default_lang = get_option('wp_wordle_default_lang', 'en');
+        $lang = sanitize_text_field($request->get_param('lang') ?: $default_lang);
         $mode = sanitize_text_field($request->get_param('mode') ?: 'daily');
-        $lang = sanitize_text_field($request->get_param('lang') ?: 'it');
 
         if (!in_array($lang, ['it', 'en'], true)) {
-            $lang = 'it';
+            $lang = $default_lang;
         }
 
         if ( $mode === 'practice' ) {
@@ -64,13 +65,14 @@ class WP_Wordle_API {
     }
 
     public function handle_guess(WP_REST_Request $request) {
+        $default_lang = get_option('wp_wordle_default_lang', 'en');
         $guess = strtoupper(trim( sanitize_text_field($request->get_param('guess'))));
         $mode = sanitize_text_field($request->get_param('mode') ?: 'daily');
-        $lang = sanitize_text_field($request->get_param('lang') ?: 'it');
+        $lang = sanitize_text_field($request->get_param('lang') ?: $default_lang);
         $token = sanitize_text_field($request->get_param('token'));
         $attempt = (int) $request->get_param( 'attempt' );
         if (!in_array($lang, ['it', 'en'], true)) {
-            $lang = 'it';
+            $lang = $default_lang;
         }
 
         if (strlen($guess) !== 5 || !ctype_alpha($guess)) {
@@ -82,9 +84,13 @@ class WP_Wordle_API {
         }
 
         if (!WP_Wordle_Game::is_valid_word($guess, $lang)) {
+            $not_found_msg = ($lang === 'it') 
+                ? __( 'Parola non valida', 'wp-wordle' )
+                : __( 'Not in word list', 'wp-wordle' );
+
             return new WP_Error(
                 'not_in_word_list',
-                __( 'Not in word list', 'wp-wordle' ),
+                $not_found_msg,
                 ['status' => 400]
             );
         }
