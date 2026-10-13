@@ -28,12 +28,8 @@ Embed the game into any post, page, or widget block:
 [wp_wordle theme="gameboy" lang="it" mode="daily"]
 ```
 
-## 🎨 Themes & Vocabulary Validation
-
-- **60 Modular CSS Themes (loaded on-demand):**  
-  `brutalist` (default), `eink`, `editorial`, `swiss`, `nordic`, `blueprint`, `matrix`, `typewriter`, `matcha`, `monokai`, `terracotta`, `dracula`, `solarized-light`, `solarized-dark`, `chalkboard`, `synthwave`, `teletext`, `gameboy`, `desert`, `midnight-slate`, `leather`, `cyberpunk`, `vaporwave`, `steampunk`, `bauhaus`, `art-deco`, `amber-crt`, `win95`, `commodore64`, `cassette-futurism`, `stained-glass`, `parchment`, `retro-mac`, `lofi-chill`, `botanical`, `deep-ocean`, `volcanic`, `arctic`, `autumn`, `cherry-blossom`, `coffee-roast`, `comic-book`, `neo-noir`, `galaxy`, `claymation`, `graph-paper`, `postage-stamp`, `moroccan`, `tarot`, `wireframe`, `arcade-cabinet`, `newspaper`, `neon-tokyo`, `radium`, `origami`, `morse-telegraph`, `solar-flare`, `glitch`, `polaroid`, `baroque`.
-
 ### 🖼️ Theme Preview Gallery
+- **60 Modular CSS Themes (loaded on-demand):**  
 
 <table>
   <tr>
@@ -317,14 +313,15 @@ Navigate to **Settings** > **WP Wordle** in the WordPress admin panel to:
 
 ## 🧪 Automated Test Suite
 
-The plugin comes with a comprehensive automated test suite (125 assertions) that verifies dictionary integrity, all 60 modular CSS themes, the game engine (IT & EN), live online dictionary services (Treccani & Datamuse), REST API controllers, and containerized Docker environment integration.
+The plugin comes with a comprehensive, modular automated test suite (137 assertions across 8 dedicated test suites) that verifies dictionary integrity, all 60 modular CSS themes, the game engine (IT & EN), live online dictionary services (Treccani & Datamuse), REST API controllers, frontend shortcode rendering, admin dashboard, and containerized Docker environment integration.
 
 To run the complete test suite:
 ```bash
-php tests/test-all-plugin.php
+php tests/run-tests.php
 ```
+*(or via legacy alias `php tests/test-all-plugin.php`)*
 
-To run the standalone English dictionary & API validation test:
+To run specific test modules (e.g. dictionary, engine, api, themes, docker):
 ```bash
-php tests/test-english-dictionary.php
+php tests/run-tests.php dictionary
 ```
