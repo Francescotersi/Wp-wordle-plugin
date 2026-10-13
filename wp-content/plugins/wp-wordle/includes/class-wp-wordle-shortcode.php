@@ -34,7 +34,13 @@ class WP_Wordle_Shortcode {
     public function render_shortcode($atts) {
         $default_theme = get_option('wp_wordle_default_theme', 'brutalist');
         $default_lang = get_option('wp_wordle_default_lang', 'en');
+        if (!in_array($default_lang, ['it', 'en'], true)) {
+            $default_lang = 'en';
+        }
         $registered_themes = WP_Wordle_Game::get_registered_themes();
+        if (!isset($registered_themes[$default_theme])) {
+            $default_theme = 'brutalist';
+        }
 
         $atts = shortcode_atts([
             'mode' => 'daily',
@@ -44,7 +50,7 @@ class WP_Wordle_Shortcode {
 
         $theme = sanitize_key($atts['theme']);
         if (!isset($registered_themes[$theme])) {
-            $theme = isset($registered_themes[$default_theme]) ? $default_theme : 'brutalist';
+            $theme = $default_theme;
         }
         $atts['theme'] = $theme;
         $atts['lang'] = in_array($atts['lang'], ['it', 'en'], true) ? $atts['lang'] : $default_lang;

@@ -30,11 +30,17 @@ class WP_Wordle_API {
 
     public function handle_start(WP_REST_Request $request) {
         $default_lang = get_option('wp_wordle_default_lang', 'en');
+        if (!in_array($default_lang, ['it', 'en'], true)) {
+            $default_lang = 'en';
+        }
         $lang = sanitize_text_field($request->get_param('lang') ?: $default_lang);
         $mode = sanitize_text_field($request->get_param('mode') ?: 'daily');
 
         if (!in_array($lang, ['it', 'en'], true)) {
             $lang = $default_lang;
+        }
+        if (!in_array($mode, ['daily', 'practice'], true)) {
+            $mode = 'daily';
         }
 
         if ( $mode === 'practice' ) {
@@ -66,13 +72,20 @@ class WP_Wordle_API {
 
     public function handle_guess(WP_REST_Request $request) {
         $default_lang = get_option('wp_wordle_default_lang', 'en');
+        if (!in_array($default_lang, ['it', 'en'], true)) {
+            $default_lang = 'en';
+        }
         $guess = strtoupper(trim( sanitize_text_field($request->get_param('guess'))));
         $mode = sanitize_text_field($request->get_param('mode') ?: 'daily');
         $lang = sanitize_text_field($request->get_param('lang') ?: $default_lang);
         $token = sanitize_text_field($request->get_param('token'));
-        $attempt = (int) $request->get_param( 'attempt' );
+        $raw_attempt = (int) $request->get_param( 'attempt' );
+        $attempt = max(1, min(6, $raw_attempt));
         if (!in_array($lang, ['it', 'en'], true)) {
             $lang = $default_lang;
+        }
+        if (!in_array($mode, ['daily', 'practice'], true)) {
+            $mode = 'daily';
         }
 
         if (strlen($guess) !== 5 || !ctype_alpha($guess)) {

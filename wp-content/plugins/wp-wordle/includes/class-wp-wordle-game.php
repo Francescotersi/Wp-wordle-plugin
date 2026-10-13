@@ -114,10 +114,17 @@ class WP_Wordle_Game {
         return $data;
     }
 
+    public static function reset_words_cache() {
+        self::$words_cache = [];
+    }
+
     /**
      * Valida una parola inglese tramite API online (Datamuse API) con transient caching
      */
     public static function check_english_online($word) {
+        if (!is_string($word)) {
+            return false;
+        }
         $word = strtolower(trim($word));
         if (strlen($word) !== 5 || !ctype_alpha($word)) {
             return false;
@@ -167,6 +174,9 @@ class WP_Wordle_Game {
     }
 
     public static function check_treccani_online($word) {
+        if (!is_string($word)) {
+            return false;
+        }
         $word = strtolower(trim($word));
         if (strlen($word) !== 5 || !ctype_alpha($word)) {
             return false;
@@ -209,6 +219,10 @@ class WP_Wordle_Game {
     }
 
     public static function add_valid_word($word, $lang = 'en') {
+        if (!is_string($word)) {
+            return;
+        }
+        $lang = in_array($lang, ['it', 'en'], true) ? $lang : 'en';
         $word = strtoupper(trim($word));
         if (strlen($word) !== 5 || !ctype_alpha($word)) {
             return;
@@ -281,15 +295,16 @@ class WP_Wordle_Game {
      * Recupera la parola del giorno
      */
     public static function get_daily_word($lang = 'en', $date = null) {
+        $lang = in_array($lang, ['it', 'en'], true) ? $lang : 'en';
         $custom_word = get_option('wp_wordle_custom_daily_word_' . $lang);
-        if (!empty($custom_word) && strlen($custom_word) === 5) {
+        if (!empty($custom_word) && strlen($custom_word) === 5 && ctype_alpha($custom_word)) {
             return strtoupper($custom_word);
         }
 
         // Se lingua italiana, tenta prima la parola del giorno ufficiale Treccani (se di 5 lettere)
         if ($lang === 'it' && empty($date)) {
             $treccani_word = self::get_treccani_daily_word();
-            if (!empty($treccani_word) && strlen($treccani_word) === 5) {
+            if (!empty($treccani_word) && strlen($treccani_word) === 5 && ctype_alpha($treccani_word)) {
                 return $treccani_word;
             }
         }
@@ -301,6 +316,10 @@ class WP_Wordle_Game {
         }
         if (empty($date)) {
             $date = current_time('Y-m-d');
+        } else {
+            if (is_string($date) && preg_match('/^\d{4}-\d{2}-\d{2}/', $date, $m)) {
+                $date = $m[0];
+            }
         }
 
         try {
@@ -315,6 +334,7 @@ class WP_Wordle_Game {
     }
 
     public static function get_random_word($lang = 'en') {
+        $lang = in_array($lang, ['it', 'en'], true) ? $lang : 'en';
         $words_data = self::load_words($lang);
         $targets = $words_data['targets'];
         if (empty($targets)) {
@@ -329,10 +349,14 @@ class WP_Wordle_Game {
      * Valida se una parola esiste: prima controllo locale veloce, poi fetch dizionario online con auto-apprendimento
      */
     public static function is_valid_word($word, $lang = 'en') {
+        if (!is_string($word)) {
+            return false;
+        }
         $word = strtoupper(trim($word));
         if (strlen($word) !== 5 || !ctype_alpha($word)) {
             return false;
         }
+        $lang = in_array($lang, ['it', 'en'], true) ? $lang : 'en';
 
         $words_data = self::load_words($lang);
         $is_in_local = in_array($word, $words_data['valid'], true) || in_array($word, $words_data['targets'], true);
@@ -370,8 +394,16 @@ class WP_Wordle_Game {
     }
 
     public static function evaluate_guess($guess, $secret) {
+        if (!is_string($guess) || !is_string($secret)) {
+            return [];
+        }
         $guess = strtoupper(trim($guess));
         $secret = strtoupper(trim($secret));
+
+        if (strlen($guess) !== 5 || strlen($secret) !== 5 || !ctype_alpha($guess) || !ctype_alpha($secret)) {
+            return [];
+        }
+
         $result = array_fill(0, 5, null);
 
         $secret_letter_counts = [];
