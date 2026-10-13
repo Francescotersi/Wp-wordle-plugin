@@ -31,7 +31,13 @@ class WP_Wordle_Admin {
         register_setting('wp_wordle_settings_group', 'wp_wordle_default_lang', [
             'type' => 'string',
             'sanitize_callback' => 'sanitize_text_field',
-            'default' => 'it',
+            'default' => 'en',
+        ]);
+
+        register_setting('wp_wordle_settings_group', 'wp_wordle_default_theme', [
+            'type' => 'string',
+            'sanitize_callback' => [$this, 'sanitize_theme'],
+            'default' => 'brutalist',
         ]);
 
         register_setting('wp_wordle_settings_group', 'wp_wordle_custom_daily_word_it', [
@@ -48,16 +54,27 @@ class WP_Wordle_Admin {
     }
 
     /**
+     * Sanitize theme slug against registered themes
+     */
+    public function sanitize_theme($theme) {
+        $themes = WP_Wordle_Game::get_registered_themes();
+        $theme = sanitize_key($theme);
+        return isset($themes[$theme]) ? $theme : 'brutalist';
+    }
+
+    /**
      * Sanitize custom word (exactly 5 letters, uppercase)
      */
     public function sanitize_custom_word($word) {
         $word = strtoupper(trim(sanitize_text_field($word)));
         if (!empty($word) && (strlen($word) !== 5 || !ctype_alpha($word))) {
-            add_settings_error(
-                'wp_wordle_custom_word',
-                'invalid_word',
-                __('The custom word must be exactly 5 alphabetical letters.', 'wp-wordle')
-            );
+            if (function_exists('add_settings_error')) {
+                add_settings_error(
+                    'wp_wordle_custom_word',
+                    'invalid_word',
+                    __('The custom word must be exactly 5 alphabetical letters.', 'wp-wordle')
+                );
+            }
             return '';
         }
         return $word;
@@ -71,7 +88,9 @@ class WP_Wordle_Admin {
             return;
         }
 
-        $default_lang = get_option('wp_wordle_default_lang', 'it');
+        $default_lang = get_option('wp_wordle_default_lang', 'en');
+        $default_theme = get_option('wp_wordle_default_theme', 'brutalist');
+        $registered_themes = WP_Wordle_Game::get_registered_themes();
         $custom_word_it = get_option('wp_wordle_custom_daily_word_it', '');
         $custom_word_en = get_option('wp_wordle_custom_daily_word_en', '');
 
@@ -91,8 +110,9 @@ class WP_Wordle_Admin {
                 <code style="font-size: 1.1rem; padding: 4px 8px; background: #fff; border: 1px solid #ccd0d4; border-radius: 4px;">[wp_wordle]</code>
                 <p style="margin-top: 10px; font-size: 0.9rem; color: #555;">
                     <?php esc_html_e('Advanced options:', 'wp-wordle'); ?>
-                    <code>[wp_wordle lang="en"]</code> (English) &bull;
-                    <code>[wp_wordle mode="practice"]</code> (start in practice mode)
+                    <code>[wp_wordle lang="it"]</code> (Italian) &bull;
+                    <code>[wp_wordle mode="practice"]</code> (start in practice mode) &bull;
+                    <code>[wp_wordle theme="matrix"]</code> (custom visual theme)
                 </p>
             </div>
 
@@ -110,9 +130,27 @@ class WP_Wordle_Admin {
                         </th>
                         <td>
                             <select name="wp_wordle_default_lang" id="wp_wordle_default_lang">
+                                <option value="en" <?php selected($default_lang, 'en'); ?>><?php esc_html_e('English (Default)', 'wp-wordle'); ?></option>
                                 <option value="it" <?php selected($default_lang, 'it'); ?>><?php esc_html_e('Italian', 'wp-wordle'); ?></option>
-                                <option value="en" <?php selected($default_lang, 'en'); ?>><?php esc_html_e('English', 'wp-wordle'); ?></option>
                             </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">
+                            <label for="wp_wordle_default_theme"><?php esc_html_e('Default Theme', 'wp-wordle'); ?></label>
+                        </th>
+                        <td>
+                            <select name="wp_wordle_default_theme" id="wp_wordle_default_theme" style="min-width: 280px;">
+                                <?php foreach ($registered_themes as $slug => $theme_info) : ?>
+                                    <option value="<?php echo esc_attr($slug); ?>" <?php selected($default_theme, $slug); ?>>
+                                        <?php echo esc_html($theme_info['name']); ?> (<?php echo esc_html($slug); ?>)
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                            <p class="description">
+                                <?php esc_html_e('Select the default visual theme (default is brutalist). You can override this per shortcode: [wp_wordle theme="..."]', 'wp-wordle'); ?>
+                            </p>
                         </td>
                     </tr>
 
