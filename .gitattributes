@@ -1,0 +1,5 @@
+# Exclude development, test, and docker files from release archives
+/tests export-ignore
+/docker-compose.yml export-ignore
+/.env.example export-ignore
+/.gitattributes export-ignore
