@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Vintage Botanical (botanical)
+ * Erbario scientifico ottocentesco con salvia essiccata, felci e carta di cotone
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-botanical {
+    --theme-bg: #f2efe9;
+    --theme-text: #2d3a27;
+    --theme-border: 1px solid #b8c4b2;
+    --theme-shadow: 0 4px 16px rgba(45,58,39,0.06);
+    --theme-font: "Georgia", serif;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #f2efe9;
+    --theme-tile-text: #2d3a27;
+    --theme-tile-border: 1px solid #b8c4b2;
+
+    --theme-correct-bg: #405942;
+    --theme-correct-text: #f2efe9;
+    --theme-correct-border: 1.5px solid #405942;
+
+    --theme-present-bg: #8a9a5b;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #8a9a5b;
+
+    --theme-absent-bg: #ded9cf;
+    --theme-absent-text: #8a9483;
+    --theme-absent-border: 1.5px solid #cac2b5;
+
+    --theme-key-bg: #e4dfd5;
+    --theme-key-text: #2d3a27;
+    --theme-key-border: 1px solid #c5beaF;
+    --theme-key-absent-bg: #d2cbbf;
+    --theme-key-absent-text: #7c8675;
+
+    --theme-mode-bg: #e4dfd5;
+    --theme-mode-text: #2d3a27;
+    --theme-mode-border: 1px solid #b8c4b2;
+    --theme-mode-active-bg: #405942;
+    --theme-mode-active-text: #f2efe9;
+
+    --theme-modal-bg: #f2efe9;
+    --theme-modal-text: #2d3a27;
+    --theme-modal-border: 1px solid #b8c4b2;
+    --theme-modal-shadow: 0 4px 16px rgba(45,58,39,0.06);
+
+    --theme-toast-bg: #405942;
+    --theme-toast-text: #f2efe9;
+    --theme-toast-border: 1px solid #b8c4b2;
+    --theme-toast-shadow: 0 4px 16px rgba(45,58,39,0.06);
+
+    --theme-btn-bg: #e4dfd5;
+    --theme-btn-text: #2d3a27;
+    --theme-btn-border: 1px solid #c5beaF;
+    --theme-btn-shadow: 0 4px 16px rgba(45,58,39,0.06);
+    --theme-btn-share-bg: #405942;
+    --theme-btn-share-text: #f2efe9;
+}

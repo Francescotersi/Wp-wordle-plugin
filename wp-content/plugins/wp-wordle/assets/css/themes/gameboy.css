@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Game Boy 1989 (gameboy)
+ * L’originale schermo monocromatico DMG a matrice di punti in 4 toni di verde
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-gameboy {
+    --theme-bg: #8bac0f;
+    --theme-text: #0f380f;
+    --theme-border: 3px solid #0f380f;
+    --theme-shadow: 4px 4px 0px #0f380f;
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #8bac0f;
+    --theme-tile-text: #0f380f;
+    --theme-tile-border: 3px solid #0f380f;
+
+    --theme-correct-bg: #0f380f;
+    --theme-correct-text: #8bac0f;
+    --theme-correct-border: 2px solid #0f380f;
+
+    --theme-present-bg: #306230;
+    --theme-present-text: #9bbc0f;
+    --theme-present-border: 2px solid #0f380f;
+
+    --theme-absent-bg: #9bbc0f;
+    --theme-absent-text: #306230;
+    --theme-absent-border: 2px dashed #0f380f;
+
+    --theme-key-bg: #9bbc0f;
+    --theme-key-text: #0f380f;
+    --theme-key-border: 2px solid #0f380f;
+    --theme-key-absent-bg: #7e9c0c;
+    --theme-key-absent-text: #2b582b;
+
+    --theme-mode-bg: #9bbc0f;
+    --theme-mode-text: #0f380f;
+    --theme-mode-border: 3px solid #0f380f;
+    --theme-mode-active-bg: #0f380f;
+    --theme-mode-active-text: #8bac0f;
+
+    --theme-modal-bg: #8bac0f;
+    --theme-modal-text: #0f380f;
+    --theme-modal-border: 3px solid #0f380f;
+    --theme-modal-shadow: 4px 4px 0px #0f380f;
+
+    --theme-toast-bg: #0f380f;
+    --theme-toast-text: #8bac0f;
+    --theme-toast-border: 3px solid #0f380f;
+    --theme-toast-shadow: 4px 4px 0px #0f380f;
+
+    --theme-btn-bg: #9bbc0f;
+    --theme-btn-text: #0f380f;
+    --theme-btn-border: 2px solid #0f380f;
+    --theme-btn-shadow: 4px 4px 0px #0f380f;
+    --theme-btn-share-bg: #0f380f;
+    --theme-btn-share-text: #8bac0f;
+}

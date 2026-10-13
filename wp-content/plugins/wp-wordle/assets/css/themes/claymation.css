@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Claymation Studio (claymation)
+ * Plastilina artigianale modellata a mano in stop-motion con angoli morbidissimi
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-claymation {
+    --theme-bg: #fff5eb;
+    --theme-text: #4a3528;
+    --theme-border: 3px solid #6b4d38;
+    --theme-shadow: 4px 4px 0px #6b4d38;
+    --theme-font: "Comic Sans MS", "Chalkboard", system-ui, sans-serif;
+    --theme-radius: 12px;
+
+    --theme-tile-bg: #fff5eb;
+    --theme-tile-text: #4a3528;
+    --theme-tile-border: 3px solid #6b4d38;
+
+    --theme-correct-bg: #38a169;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #276749;
+
+    --theme-present-bg: #dd6b20;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #9c4221;
+
+    --theme-absent-bg: #e8d5c4;
+    --theme-absent-text: #8a7263;
+    --theme-absent-border: 2px solid #d4beab;
+
+    --theme-key-bg: #f2e2d2;
+    --theme-key-text: #4a3528;
+    --theme-key-border: 2px solid #6b4d38;
+    --theme-key-absent-bg: #dbcaa6;
+    --theme-key-absent-text: #78685b;
+
+    --theme-mode-bg: #f2e2d2;
+    --theme-mode-text: #4a3528;
+    --theme-mode-border: 3px solid #6b4d38;
+    --theme-mode-active-bg: #38a169;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #fff5eb;
+    --theme-modal-text: #4a3528;
+    --theme-modal-border: 3px solid #6b4d38;
+    --theme-modal-shadow: 4px 4px 0px #6b4d38;
+
+    --theme-toast-bg: #38a169;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 3px solid #6b4d38;
+    --theme-toast-shadow: 4px 4px 0px #6b4d38;
+
+    --theme-btn-bg: #f2e2d2;
+    --theme-btn-text: #4a3528;
+    --theme-btn-border: 2px solid #6b4d38;
+    --theme-btn-shadow: 4px 4px 0px #6b4d38;
+    --theme-btn-share-bg: #38a169;
+    --theme-btn-share-text: #ffffff;
+}

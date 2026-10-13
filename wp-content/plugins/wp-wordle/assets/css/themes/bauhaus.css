@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Bauhaus Weimar 1919 (bauhaus)
+ * Rigore modernista, forme pure e i tre colori primari di Kandinsky e Walter Gropius
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-bauhaus {
+    --theme-bg: #f4eee1;
+    --theme-text: #111111;
+    --theme-border: 3px solid #111111;
+    --theme-shadow: 6px 6px 0px #d62828;
+    --theme-font: "Futura", "Century Gothic", "Arial Black", sans-serif;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #f4eee1;
+    --theme-tile-text: #111111;
+    --theme-tile-border: 3px solid #111111;
+
+    --theme-correct-bg: #d62828;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #111111;
+
+    --theme-present-bg: #003049;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #111111;
+
+    --theme-absent-bg: #e2d8c3;
+    --theme-absent-text: #7a705a;
+    --theme-absent-border: 2px solid #111111;
+
+    --theme-key-bg: #e9e1cf;
+    --theme-key-text: #111111;
+    --theme-key-border: 2px solid #111111;
+    --theme-key-absent-bg: #d5cca7;
+    --theme-key-absent-text: #807765;
+
+    --theme-mode-bg: #fcbf49;
+    --theme-mode-text: #111111;
+    --theme-mode-border: 3px solid #111111;
+    --theme-mode-active-bg: #d62828;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f4eee1;
+    --theme-modal-text: #111111;
+    --theme-modal-border: 3px solid #111111;
+    --theme-modal-shadow: 6px 6px 0px #d62828;
+
+    --theme-toast-bg: #d62828;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 3px solid #111111;
+    --theme-toast-shadow: 6px 6px 0px #d62828;
+
+    --theme-btn-bg: #e9e1cf;
+    --theme-btn-text: #111111;
+    --theme-btn-border: 2px solid #111111;
+    --theme-btn-shadow: 6px 6px 0px #d62828;
+    --theme-btn-share-bg: #d62828;
+    --theme-btn-share-text: #ffffff;
+}

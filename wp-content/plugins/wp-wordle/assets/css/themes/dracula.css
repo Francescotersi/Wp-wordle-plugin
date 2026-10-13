@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Dracula Gothic (dracula)
+ * Dark mode gotica con sfondo ardesia violaceo, verde elettrico e arancio caldo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-dracula {
+    --theme-bg: #282a36;
+    --theme-text: #f8f8f2;
+    --theme-border: 1px solid #44475a;
+    --theme-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    --theme-font: system-ui, sans-serif;
+    --theme-radius: 5px;
+
+    --theme-tile-bg: #282a36;
+    --theme-tile-text: #f8f8f2;
+    --theme-tile-border: 1px solid #44475a;
+
+    --theme-correct-bg: #50fa7b;
+    --theme-correct-text: #282a36;
+    --theme-correct-border: 1.5px solid #50fa7b;
+
+    --theme-present-bg: #ffb86c;
+    --theme-present-text: #282a36;
+    --theme-present-border: 1.5px solid #ffb86c;
+
+    --theme-absent-bg: #44475a;
+    --theme-absent-text: #6272a4;
+    --theme-absent-border: 1.5px solid #44475a;
+
+    --theme-key-bg: #44475a;
+    --theme-key-text: #f8f8f2;
+    --theme-key-border: none;
+    --theme-key-absent-bg: #343746;
+    --theme-key-absent-text: #566288;
+
+    --theme-mode-bg: #44475a;
+    --theme-mode-text: #f8f8f2;
+    --theme-mode-border: 1px solid #44475a;
+    --theme-mode-active-bg: #bd93f9;
+    --theme-mode-active-text: #282a36;
+
+    --theme-modal-bg: #282a36;
+    --theme-modal-text: #f8f8f2;
+    --theme-modal-border: 1px solid #44475a;
+    --theme-modal-shadow: 0 8px 24px rgba(0,0,0,0.35);
+
+    --theme-toast-bg: #50fa7b;
+    --theme-toast-text: #282a36;
+    --theme-toast-border: 1px solid #44475a;
+    --theme-toast-shadow: 0 8px 24px rgba(0,0,0,0.35);
+
+    --theme-btn-bg: #44475a;
+    --theme-btn-text: #f8f8f2;
+    --theme-btn-border: none;
+    --theme-btn-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    --theme-btn-share-bg: #50fa7b;
+    --theme-btn-share-text: #282a36;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Solar Flare Infrared (solar-flare)
+ * Telescopio James Webb: plasma solare dorato, brillamenti coronali ed eruzioni solari
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-solar-flare {
+    --theme-bg: #0d0705;
+    --theme-text: #fbbf24;
+    --theme-border: 2px solid #f97316;
+    --theme-shadow: 0 0 22px rgba(249,115,22,0.35);
+    --theme-font: system-ui, monospace;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #0d0705;
+    --theme-tile-text: #fbbf24;
+    --theme-tile-border: 2px solid #f97316;
+
+    --theme-correct-bg: #ef4444;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #f97316;
+
+    --theme-present-bg: #f59e0b;
+    --theme-present-text: #0d0705;
+    --theme-present-border: 2px solid #fbbf24;
+
+    --theme-absent-bg: #26140e;
+    --theme-absent-text: #7a4a35;
+    --theme-absent-border: 1.5px solid #3d2016;
+
+    --theme-key-bg: #1f100b;
+    --theme-key-text: #fbbf24;
+    --theme-key-border: 1px solid #4d2417;
+    --theme-key-absent-bg: #170a06;
+    --theme-key-absent-text: #633824;
+
+    --theme-mode-bg: #1f100b;
+    --theme-mode-text: #fbbf24;
+    --theme-mode-border: 2px solid #f97316;
+    --theme-mode-active-bg: #ef4444;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #0d0705;
+    --theme-modal-text: #fbbf24;
+    --theme-modal-border: 2px solid #f97316;
+    --theme-modal-shadow: 0 0 22px rgba(249,115,22,0.35);
+
+    --theme-toast-bg: #ef4444;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 2px solid #f97316;
+    --theme-toast-shadow: 0 0 22px rgba(249,115,22,0.35);
+
+    --theme-btn-bg: #1f100b;
+    --theme-btn-text: #fbbf24;
+    --theme-btn-border: 1px solid #4d2417;
+    --theme-btn-shadow: 0 0 22px rgba(249,115,22,0.35);
+    --theme-btn-share-bg: #ef4444;
+    --theme-btn-share-text: #ffffff;
+}

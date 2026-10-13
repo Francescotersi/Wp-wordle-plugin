@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Volcanic Obsidian (volcanic)
+ * Ossidiana nera basaltica e vene incandescenti di lava vulcanica in eruzione
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-volcanic {
+    --theme-bg: #121214;
+    --theme-text: #ff5500;
+    --theme-border: 2px solid #ff3b00;
+    --theme-shadow: 0 0 20px rgba(255,59,0,0.3);
+    --theme-font: "Trebuchet MS", sans-serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #121214;
+    --theme-tile-text: #ff5500;
+    --theme-tile-border: 2px solid #ff3b00;
+
+    --theme-correct-bg: #ff3b00;
+    --theme-correct-text: #121214;
+    --theme-correct-border: 2px solid #ff5500;
+
+    --theme-present-bg: #ff9900;
+    --theme-present-text: #121214;
+    --theme-present-border: 2px solid #ffbb33;
+
+    --theme-absent-bg: #222226;
+    --theme-absent-text: #6e625a;
+    --theme-absent-border: 1.5px solid #333338;
+
+    --theme-key-bg: #1c1c20;
+    --theme-key-text: #ff5500;
+    --theme-key-border: 1px solid #3d352e;
+    --theme-key-absent-bg: #151518;
+    --theme-key-absent-text: #544d47;
+
+    --theme-mode-bg: #1c1c20;
+    --theme-mode-text: #ff5500;
+    --theme-mode-border: 2px solid #ff3b00;
+    --theme-mode-active-bg: #ff3b00;
+    --theme-mode-active-text: #121214;
+
+    --theme-modal-bg: #121214;
+    --theme-modal-text: #ff5500;
+    --theme-modal-border: 2px solid #ff3b00;
+    --theme-modal-shadow: 0 0 20px rgba(255,59,0,0.3);
+
+    --theme-toast-bg: #ff3b00;
+    --theme-toast-text: #121214;
+    --theme-toast-border: 2px solid #ff3b00;
+    --theme-toast-shadow: 0 0 20px rgba(255,59,0,0.3);
+
+    --theme-btn-bg: #1c1c20;
+    --theme-btn-text: #ff5500;
+    --theme-btn-border: 1px solid #3d352e;
+    --theme-btn-shadow: 0 0 20px rgba(255,59,0,0.3);
+    --theme-btn-share-bg: #ff3b00;
+    --theme-btn-share-text: #121214;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Architectural Blueprint (blueprint)
+ * Cianografia tecnica da disegno CAD, blu scuro navale e linee millimetriche ciano
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-blueprint {
+    --theme-bg: #0f2b48;
+    --theme-text: #ffffff;
+    --theme-border: 2px solid #38bdf8;
+    --theme-shadow: 0 8px 24px rgba(15,43,72,0.4);
+    --theme-font: "Consolas", "Courier New", monospace;
+    --theme-radius: 1px;
+
+    --theme-tile-bg: #0f2b48;
+    --theme-tile-text: #ffffff;
+    --theme-tile-border: 2px solid #38bdf8;
+
+    --theme-correct-bg: #0284c7;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #38bdf8;
+
+    --theme-present-bg: #f59e0b;
+    --theme-present-text: #000000;
+    --theme-present-border: 2px solid #f59e0b;
+
+    --theme-absent-bg: #1e3a5f;
+    --theme-absent-text: #64748b;
+    --theme-absent-border: 1.5px solid #254b77;
+
+    --theme-key-bg: #16385e;
+    --theme-key-text: #e0f2fe;
+    --theme-key-border: 1px solid #254b77;
+    --theme-key-absent-bg: #132840;
+    --theme-key-absent-text: #475569;
+
+    --theme-mode-bg: #16385e;
+    --theme-mode-text: #93c5fd;
+    --theme-mode-border: 2px solid #38bdf8;
+    --theme-mode-active-bg: #0284c7;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #0f2b48;
+    --theme-modal-text: #ffffff;
+    --theme-modal-border: 2px solid #38bdf8;
+    --theme-modal-shadow: 0 8px 24px rgba(15,43,72,0.4);
+
+    --theme-toast-bg: #0284c7;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 2px solid #38bdf8;
+    --theme-toast-shadow: 0 8px 24px rgba(15,43,72,0.4);
+
+    --theme-btn-bg: #16385e;
+    --theme-btn-text: #e0f2fe;
+    --theme-btn-border: 1px solid #254b77;
+    --theme-btn-shadow: 0 8px 24px rgba(15,43,72,0.4);
+    --theme-btn-share-bg: #0284c7;
+    --theme-btn-share-text: #ffffff;
+}

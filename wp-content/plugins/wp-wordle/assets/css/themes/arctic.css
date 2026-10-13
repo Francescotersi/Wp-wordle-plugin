@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Arctic Glacial Ice (arctic)
+ * Ghiacciai polari, riflessi azzurri di iceberg millenari e gelo cristallino
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-arctic {
+    --theme-bg: #eaf4f9;
+    --theme-text: #133b5c;
+    --theme-border: 1px solid #b5d5e8;
+    --theme-shadow: 0 6px 20px rgba(19,59,92,0.08);
+    --theme-font: system-ui, sans-serif;
+    --theme-radius: 6px;
+
+    --theme-tile-bg: #eaf4f9;
+    --theme-tile-text: #133b5c;
+    --theme-tile-border: 1px solid #b5d5e8;
+
+    --theme-correct-bg: #1d658c;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #1d658c;
+
+    --theme-present-bg: #4aa3df;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #4aa3df;
+
+    --theme-absent-bg: #d3e4ee;
+    --theme-absent-text: #7b9fb5;
+    --theme-absent-border: 1.5px solid #bdd6e4;
+
+    --theme-key-bg: #daebf3;
+    --theme-key-text: #133b5c;
+    --theme-key-border: 1px solid #bed6e4;
+    --theme-key-absent-bg: #c9dee8;
+    --theme-key-absent-text: #7093a8;
+
+    --theme-mode-bg: #daebf3;
+    --theme-mode-text: #133b5c;
+    --theme-mode-border: 1px solid #b5d5e8;
+    --theme-mode-active-bg: #1d658c;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #eaf4f9;
+    --theme-modal-text: #133b5c;
+    --theme-modal-border: 1px solid #b5d5e8;
+    --theme-modal-shadow: 0 6px 20px rgba(19,59,92,0.08);
+
+    --theme-toast-bg: #1d658c;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #b5d5e8;
+    --theme-toast-shadow: 0 6px 20px rgba(19,59,92,0.08);
+
+    --theme-btn-bg: #daebf3;
+    --theme-btn-text: #133b5c;
+    --theme-btn-border: 1px solid #bed6e4;
+    --theme-btn-shadow: 0 6px 20px rgba(19,59,92,0.08);
+    --theme-btn-share-bg: #1d658c;
+    --theme-btn-share-text: #ffffff;
+}

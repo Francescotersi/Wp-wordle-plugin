@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Teletext / Ceefax (teletext)
+ * La grafica televisiva a blocchi degli anni ’80, nero assoluto e primari puri
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-teletext {
+    --theme-bg: #000000;
+    --theme-text: #ffffff;
+    --theme-border: 3px solid #ffff00;
+    --theme-shadow: none;
+    --theme-font: "Courier New", Courier, monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #000000;
+    --theme-tile-text: #ffffff;
+    --theme-tile-border: 3px solid #ffff00;
+
+    --theme-correct-bg: #00ff00;
+    --theme-correct-text: #000000;
+    --theme-correct-border: 2px solid #00ff00;
+
+    --theme-present-bg: #ffff00;
+    --theme-present-text: #000000;
+    --theme-present-border: 2px solid #ffff00;
+
+    --theme-absent-bg: #222222;
+    --theme-absent-text: #666666;
+    --theme-absent-border: 2px solid #333333;
+
+    --theme-key-bg: #111111;
+    --theme-key-text: #ffffff;
+    --theme-key-border: 2px solid #ffffff;
+    --theme-key-absent-bg: #181818;
+    --theme-key-absent-text: #555555;
+
+    --theme-mode-bg: #000000;
+    --theme-mode-text: #ffffff;
+    --theme-mode-border: 3px solid #ffff00;
+    --theme-mode-active-bg: #ffff00;
+    --theme-mode-active-text: #000000;
+
+    --theme-modal-bg: #000000;
+    --theme-modal-text: #ffffff;
+    --theme-modal-border: 3px solid #ffff00;
+    --theme-modal-shadow: none;
+
+    --theme-toast-bg: #00ff00;
+    --theme-toast-text: #000000;
+    --theme-toast-border: 3px solid #ffff00;
+    --theme-toast-shadow: none;
+
+    --theme-btn-bg: #111111;
+    --theme-btn-text: #ffffff;
+    --theme-btn-border: 2px solid #ffffff;
+    --theme-btn-shadow: none;
+    --theme-btn-share-bg: #00ff00;
+    --theme-btn-share-text: #000000;
+}

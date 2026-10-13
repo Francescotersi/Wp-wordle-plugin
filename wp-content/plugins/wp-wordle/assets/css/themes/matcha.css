@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Matcha Zen (matcha)
+ * Armonia naturale ispirata al tè matcha, bambù e toni organici della terra
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-matcha {
+    --theme-bg: #f3f4ee;
+    --theme-text: #283618;
+    --theme-border: 1px solid #ccd5ae;
+    --theme-shadow: 0 4px 16px rgba(40,54,24,0.06);
+    --theme-font: system-ui, sans-serif;
+    --theme-radius: 8px;
+
+    --theme-tile-bg: #f3f4ee;
+    --theme-tile-text: #283618;
+    --theme-tile-border: 1px solid #ccd5ae;
+
+    --theme-correct-bg: #606c38;
+    --theme-correct-text: #fefae0;
+    --theme-correct-border: 1.5px solid #606c38;
+
+    --theme-present-bg: #dda15e;
+    --theme-present-text: #283618;
+    --theme-present-border: 1.5px solid #dda15e;
+
+    --theme-absent-bg: #e9edc9;
+    --theme-absent-text: #8a9a5b;
+    --theme-absent-border: 1.5px solid #d4dcb2;
+
+    --theme-key-bg: #e9edc9;
+    --theme-key-text: #283618;
+    --theme-key-border: 1px solid #d4dcb2;
+    --theme-key-absent-bg: #d8dec0;
+    --theme-key-absent-text: #7a8950;
+
+    --theme-mode-bg: #e9edc9;
+    --theme-mode-text: #283618;
+    --theme-mode-border: 1px solid #ccd5ae;
+    --theme-mode-active-bg: #606c38;
+    --theme-mode-active-text: #fefae0;
+
+    --theme-modal-bg: #f3f4ee;
+    --theme-modal-text: #283618;
+    --theme-modal-border: 1px solid #ccd5ae;
+    --theme-modal-shadow: 0 4px 16px rgba(40,54,24,0.06);
+
+    --theme-toast-bg: #606c38;
+    --theme-toast-text: #fefae0;
+    --theme-toast-border: 1px solid #ccd5ae;
+    --theme-toast-shadow: 0 4px 16px rgba(40,54,24,0.06);
+
+    --theme-btn-bg: #e9edc9;
+    --theme-btn-text: #283618;
+    --theme-btn-border: 1px solid #d4dcb2;
+    --theme-btn-shadow: 0 4px 16px rgba(40,54,24,0.06);
+    --theme-btn-share-bg: #606c38;
+    --theme-btn-share-text: #fefae0;
+}

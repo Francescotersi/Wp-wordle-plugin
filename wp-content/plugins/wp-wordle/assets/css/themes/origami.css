@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Washi Origami (origami)
+ * Carta giapponese washi a fibra naturale, pieghe nette a losanga e lacca vermiglia
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-origami {
+    --theme-bg: #fbfaf5;
+    --theme-text: #262422;
+    --theme-border: 1.5px solid #d1cbbe;
+    --theme-shadow: 2px 3px 10px rgba(0,0,0,0.06);
+    --theme-font: "Yu Gothic", "Meiryo", system-ui, sans-serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #fbfaf5;
+    --theme-tile-text: #262422;
+    --theme-tile-border: 1.5px solid #d1cbbe;
+
+    --theme-correct-bg: #b91c1c;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #8f1313;
+
+    --theme-present-bg: #c29b38;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #997824;
+
+    --theme-absent-bg: #e7e3d8;
+    --theme-absent-text: #8a8375;
+    --theme-absent-border: 1.5px solid #cfc8ba;
+
+    --theme-key-bg: #ede8dd;
+    --theme-key-text: #262422;
+    --theme-key-border: 1px solid #cfc8ba;
+    --theme-key-absent-bg: #ded8cb;
+    --theme-key-absent-text: #787163;
+
+    --theme-mode-bg: #ede8dd;
+    --theme-mode-text: #262422;
+    --theme-mode-border: 1.5px solid #d1cbbe;
+    --theme-mode-active-bg: #b91c1c;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #fbfaf5;
+    --theme-modal-text: #262422;
+    --theme-modal-border: 1.5px solid #d1cbbe;
+    --theme-modal-shadow: 2px 3px 10px rgba(0,0,0,0.06);
+
+    --theme-toast-bg: #b91c1c;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1.5px solid #d1cbbe;
+    --theme-toast-shadow: 2px 3px 10px rgba(0,0,0,0.06);
+
+    --theme-btn-bg: #ede8dd;
+    --theme-btn-text: #262422;
+    --theme-btn-border: 1px solid #cfc8ba;
+    --theme-btn-shadow: 2px 3px 10px rgba(0,0,0,0.06);
+    --theme-btn-share-bg: #b91c1c;
+    --theme-btn-share-text: #ffffff;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Amber Phosphor CRT (amber-crt)
+ * I leggendari monitor a fosfori ambra arancioni DEC VT220 degli anni ’80
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-amber-crt {
+    --theme-bg: #0d0800;
+    --theme-text: #ffb000;
+    --theme-border: 2px solid #ffb000;
+    --theme-shadow: 0 0 16px rgba(255,176,0,0.3);
+    --theme-font: "VT323", "Courier New", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #0d0800;
+    --theme-tile-text: #ffb000;
+    --theme-tile-border: 2px solid #ffb000;
+
+    --theme-correct-bg: #ffb000;
+    --theme-correct-text: #0d0800;
+    --theme-correct-border: 2px solid #ffb000;
+
+    --theme-present-bg: #cc7a00;
+    --theme-present-text: #0d0800;
+    --theme-present-border: 2px solid #ffb000;
+
+    --theme-absent-bg: #1f1300;
+    --theme-absent-text: #805000;
+    --theme-absent-border: 1.5px solid #331e00;
+
+    --theme-key-bg: #1a1000;
+    --theme-key-text: #ffb000;
+    --theme-key-border: 1px solid #663d00;
+    --theme-key-absent-bg: #120a00;
+    --theme-key-absent-text: #5c3a00;
+
+    --theme-mode-bg: #1a1000;
+    --theme-mode-text: #ffb000;
+    --theme-mode-border: 2px solid #ffb000;
+    --theme-mode-active-bg: #ffb000;
+    --theme-mode-active-text: #0d0800;
+
+    --theme-modal-bg: #0d0800;
+    --theme-modal-text: #ffb000;
+    --theme-modal-border: 2px solid #ffb000;
+    --theme-modal-shadow: 0 0 16px rgba(255,176,0,0.3);
+
+    --theme-toast-bg: #ffb000;
+    --theme-toast-text: #0d0800;
+    --theme-toast-border: 2px solid #ffb000;
+    --theme-toast-shadow: 0 0 16px rgba(255,176,0,0.3);
+
+    --theme-btn-bg: #1a1000;
+    --theme-btn-text: #ffb000;
+    --theme-btn-border: 1px solid #663d00;
+    --theme-btn-shadow: 0 0 16px rgba(255,176,0,0.3);
+    --theme-btn-share-bg: #ffb000;
+    --theme-btn-share-text: #0d0800;
+}

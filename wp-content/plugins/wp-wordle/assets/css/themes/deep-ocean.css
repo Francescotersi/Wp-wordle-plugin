@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Abyssal Deep Ocean (deep-ocean)
+ * Fossa delle Marianne: blu marino abissale e bioluminescenza turchese idrotermale
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-deep-ocean {
+    --theme-bg: #040d1a;
+    --theme-text: #90e0ef;
+    --theme-border: 1.5px solid #0077b6;
+    --theme-shadow: 0 0 20px rgba(0,180,216,0.2);
+    --theme-font: system-ui, -apple-system, sans-serif;
+    --theme-radius: 5px;
+
+    --theme-tile-bg: #040d1a;
+    --theme-tile-text: #90e0ef;
+    --theme-tile-border: 1.5px solid #0077b6;
+
+    --theme-correct-bg: #00b4d8;
+    --theme-correct-text: #040d1a;
+    --theme-correct-border: 1.5px solid #00b4d8;
+
+    --theme-present-bg: #48cae4;
+    --theme-present-text: #040d1a;
+    --theme-present-border: 1.5px solid #48cae4;
+
+    --theme-absent-bg: #0d2137;
+    --theme-absent-text: #3a698a;
+    --theme-absent-border: 1.5px solid #143557;
+
+    --theme-key-bg: #0a1d33;
+    --theme-key-text: #90e0ef;
+    --theme-key-border: 1px solid #143e69;
+    --theme-key-absent-bg: #061324;
+    --theme-key-absent-text: #2d526e;
+
+    --theme-mode-bg: #0a1d33;
+    --theme-mode-text: #90e0ef;
+    --theme-mode-border: 1.5px solid #0077b6;
+    --theme-mode-active-bg: #00b4d8;
+    --theme-mode-active-text: #040d1a;
+
+    --theme-modal-bg: #040d1a;
+    --theme-modal-text: #90e0ef;
+    --theme-modal-border: 1.5px solid #0077b6;
+    --theme-modal-shadow: 0 0 20px rgba(0,180,216,0.2);
+
+    --theme-toast-bg: #00b4d8;
+    --theme-toast-text: #040d1a;
+    --theme-toast-border: 1.5px solid #0077b6;
+    --theme-toast-shadow: 0 0 20px rgba(0,180,216,0.2);
+
+    --theme-btn-bg: #0a1d33;
+    --theme-btn-text: #90e0ef;
+    --theme-btn-border: 1px solid #143e69;
+    --theme-btn-shadow: 0 0 20px rgba(0,180,216,0.2);
+    --theme-btn-share-bg: #00b4d8;
+    --theme-btn-share-text: #040d1a;
+}

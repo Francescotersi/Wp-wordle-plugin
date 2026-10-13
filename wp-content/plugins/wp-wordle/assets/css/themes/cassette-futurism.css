@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Cassette Futurism (cassette-futurism)
+ * Stile Nostromo 1979 e NASA: plastica beige opaca, tasti gommati e hardware tattile
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-cassette-futurism {
+    --theme-bg: #ded7c8;
+    --theme-text: #2b2c28;
+    --theme-border: 2px solid #575a4b;
+    --theme-shadow: 4px 4px 0px #a19c8b;
+    --theme-font: "Lucida Console", "Consolas", monospace;
+    --theme-radius: 6px;
+
+    --theme-tile-bg: #ded7c8;
+    --theme-tile-text: #2b2c28;
+    --theme-tile-border: 2px solid #575a4b;
+
+    --theme-correct-bg: #3e5c3e;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #2d452d;
+
+    --theme-present-bg: #c97b2b;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #995c1c;
+
+    --theme-absent-bg: #c5beaf;
+    --theme-absent-text: #787265;
+    --theme-absent-border: 1.5px solid #aba496;
+
+    --theme-key-bg: #d0c9ba;
+    --theme-key-text: #2b2c28;
+    --theme-key-border: 1.5px solid #8c8676;
+    --theme-key-absent-bg: #bebaa8;
+    --theme-key-absent-text: #706c60;
+
+    --theme-mode-bg: #d0c9ba;
+    --theme-mode-text: #2b2c28;
+    --theme-mode-border: 2px solid #575a4b;
+    --theme-mode-active-bg: #3e5c3e;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #ded7c8;
+    --theme-modal-text: #2b2c28;
+    --theme-modal-border: 2px solid #575a4b;
+    --theme-modal-shadow: 4px 4px 0px #a19c8b;
+
+    --theme-toast-bg: #3e5c3e;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 2px solid #575a4b;
+    --theme-toast-shadow: 4px 4px 0px #a19c8b;
+
+    --theme-btn-bg: #d0c9ba;
+    --theme-btn-text: #2b2c28;
+    --theme-btn-border: 1.5px solid #8c8676;
+    --theme-btn-shadow: 4px 4px 0px #a19c8b;
+    --theme-btn-share-bg: #3e5c3e;
+    --theme-btn-share-text: #ffffff;
+}

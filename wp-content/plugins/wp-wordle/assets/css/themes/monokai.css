@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Monokai Pro (monokai)
+ * Il leggendario tema dark per programmatori con verde menta e arancio solare
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-monokai {
+    --theme-bg: #272822;
+    --theme-text: #f8f8f2;
+    --theme-border: 1px solid #3e3d32;
+    --theme-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    --theme-font: "Fira Code", "Consolas", monospace;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #272822;
+    --theme-tile-text: #f8f8f2;
+    --theme-tile-border: 1px solid #3e3d32;
+
+    --theme-correct-bg: #a6e22e;
+    --theme-correct-text: #272822;
+    --theme-correct-border: 1.5px solid #a6e22e;
+
+    --theme-present-bg: #fd971f;
+    --theme-present-text: #272822;
+    --theme-present-border: 1.5px solid #fd971f;
+
+    --theme-absent-bg: #3e3d32;
+    --theme-absent-text: #75715e;
+    --theme-absent-border: 1.5px solid #49483e;
+
+    --theme-key-bg: #3e3d32;
+    --theme-key-text: #f8f8f2;
+    --theme-key-border: 1px solid #49483e;
+    --theme-key-absent-bg: #2f3029;
+    --theme-key-absent-text: #5c594b;
+
+    --theme-mode-bg: #3e3d32;
+    --theme-mode-text: #f8f8f2;
+    --theme-mode-border: 1px solid #3e3d32;
+    --theme-mode-active-bg: #a6e22e;
+    --theme-mode-active-text: #272822;
+
+    --theme-modal-bg: #272822;
+    --theme-modal-text: #f8f8f2;
+    --theme-modal-border: 1px solid #3e3d32;
+    --theme-modal-shadow: 0 8px 24px rgba(0,0,0,0.3);
+
+    --theme-toast-bg: #a6e22e;
+    --theme-toast-text: #272822;
+    --theme-toast-border: 1px solid #3e3d32;
+    --theme-toast-shadow: 0 8px 24px rgba(0,0,0,0.3);
+
+    --theme-btn-bg: #3e3d32;
+    --theme-btn-text: #f8f8f2;
+    --theme-btn-border: 1px solid #49483e;
+    --theme-btn-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    --theme-btn-share-bg: #a6e22e;
+    --theme-btn-share-text: #272822;
+}

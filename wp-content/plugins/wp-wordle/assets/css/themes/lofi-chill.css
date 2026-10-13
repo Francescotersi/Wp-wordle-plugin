@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Lo-Fi Study Room (lofi-chill)
+ * Atmosfera studio notturna: caffè caldo, cuffie, lilla polveroso e lampada da tavolo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-lofi-chill {
+    --theme-bg: #2b2638;
+    --theme-text: #f3e8ee;
+    --theme-border: 1px solid #4a3e5c;
+    --theme-shadow: 0 8px 24px rgba(25,18,36,0.4);
+    --theme-font: "Quicksand", system-ui, sans-serif;
+    --theme-radius: 8px;
+
+    --theme-tile-bg: #2b2638;
+    --theme-tile-text: #f3e8ee;
+    --theme-tile-border: 1px solid #4a3e5c;
+
+    --theme-correct-bg: #9d8189;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #9d8189;
+
+    --theme-present-bg: #d8a47f;
+    --theme-present-text: #2b2638;
+    --theme-present-border: 1.5px solid #d8a47f;
+
+    --theme-absent-bg: #3b344c;
+    --theme-absent-text: #7a6c91;
+    --theme-absent-border: 1.5px solid #4a4160;
+
+    --theme-key-bg: #3b344c;
+    --theme-key-text: #f3e8ee;
+    --theme-key-border: 1px solid #4a4160;
+    --theme-key-absent-bg: #2f293d;
+    --theme-key-absent-text: #63567a;
+
+    --theme-mode-bg: #3b344c;
+    --theme-mode-text: #f3e8ee;
+    --theme-mode-border: 1px solid #4a3e5c;
+    --theme-mode-active-bg: #9d8189;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #2b2638;
+    --theme-modal-text: #f3e8ee;
+    --theme-modal-border: 1px solid #4a3e5c;
+    --theme-modal-shadow: 0 8px 24px rgba(25,18,36,0.4);
+
+    --theme-toast-bg: #9d8189;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #4a3e5c;
+    --theme-toast-shadow: 0 8px 24px rgba(25,18,36,0.4);
+
+    --theme-btn-bg: #3b344c;
+    --theme-btn-text: #f3e8ee;
+    --theme-btn-border: 1px solid #4a4160;
+    --theme-btn-shadow: 0 8px 24px rgba(25,18,36,0.4);
+    --theme-btn-share-bg: #9d8189;
+    --theme-btn-share-text: #ffffff;
+}

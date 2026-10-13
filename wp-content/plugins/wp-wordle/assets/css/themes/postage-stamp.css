@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Vintage Postage Stamp (postage-stamp)
+ * Collezione filatelica d’epoca: bordi traforati da francobollo e inchiostri postali
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-postage-stamp {
+    --theme-bg: #f6f1e3;
+    --theme-text: #30261c;
+    --theme-border: 3px dashed #7a634e;
+    --theme-shadow: 3px 4px 14px rgba(48,38,28,0.12);
+    --theme-font: "Times New Roman", "Baskerville", serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #f6f1e3;
+    --theme-tile-text: #30261c;
+    --theme-tile-border: 3px dashed #7a634e;
+
+    --theme-correct-bg: #1e5631;
+    --theme-correct-text: #f6f1e3;
+    --theme-correct-border: 2px solid #133920;
+
+    --theme-present-bg: #9a3412;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #63200a;
+
+    --theme-absent-bg: #e2d9c5;
+    --theme-absent-text: #8a7966;
+    --theme-absent-border: 1.5px dashed #b8a691;
+
+    --theme-key-bg: #e8e0cc;
+    --theme-key-text: #30261c;
+    --theme-key-border: 1.5px solid #8f7962;
+    --theme-key-absent-bg: #d6cbb5;
+    --theme-key-absent-text: #786855;
+
+    --theme-mode-bg: #e8e0cc;
+    --theme-mode-text: #30261c;
+    --theme-mode-border: 3px dashed #7a634e;
+    --theme-mode-active-bg: #1e5631;
+    --theme-mode-active-text: #f6f1e3;
+
+    --theme-modal-bg: #f6f1e3;
+    --theme-modal-text: #30261c;
+    --theme-modal-border: 3px dashed #7a634e;
+    --theme-modal-shadow: 3px 4px 14px rgba(48,38,28,0.12);
+
+    --theme-toast-bg: #1e5631;
+    --theme-toast-text: #f6f1e3;
+    --theme-toast-border: 3px dashed #7a634e;
+    --theme-toast-shadow: 3px 4px 14px rgba(48,38,28,0.12);
+
+    --theme-btn-bg: #e8e0cc;
+    --theme-btn-text: #30261c;
+    --theme-btn-border: 1.5px solid #8f7962;
+    --theme-btn-shadow: 3px 4px 14px rgba(48,38,28,0.12);
+    --theme-btn-share-bg: #1e5631;
+    --theme-btn-share-text: #f6f1e3;
+}

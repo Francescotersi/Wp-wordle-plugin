@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Cyberpunk Night City (cyberpunk)
+ * High-tech low-life: giallo acido di Night City, ciano neon glitch e contrasto nero
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-cyberpunk {
+    --theme-bg: #05050a;
+    --theme-text: #fcee0a;
+    --theme-border: 2px solid #fcee0a;
+    --theme-shadow: 0 0 16px rgba(252,238,10,0.3);
+    --theme-font: "Trebuchet MS", "Impact", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #05050a;
+    --theme-tile-text: #fcee0a;
+    --theme-tile-border: 2px solid #fcee0a;
+
+    --theme-correct-bg: #fcee0a;
+    --theme-correct-text: #05050a;
+    --theme-correct-border: 2px solid #fcee0a;
+
+    --theme-present-bg: #00f0ff;
+    --theme-present-text: #05050a;
+    --theme-present-border: 2px solid #00f0ff;
+
+    --theme-absent-bg: #1b1b2f;
+    --theme-absent-text: #58587a;
+    --theme-absent-border: 1.5px solid #282845;
+
+    --theme-key-bg: #131322;
+    --theme-key-text: #fcee0a;
+    --theme-key-border: 1px solid #282845;
+    --theme-key-absent-bg: #090912;
+    --theme-key-absent-text: #42425c;
+
+    --theme-mode-bg: #131322;
+    --theme-mode-text: #fcee0a;
+    --theme-mode-border: 2px solid #fcee0a;
+    --theme-mode-active-bg: #fcee0a;
+    --theme-mode-active-text: #05050a;
+
+    --theme-modal-bg: #05050a;
+    --theme-modal-text: #fcee0a;
+    --theme-modal-border: 2px solid #fcee0a;
+    --theme-modal-shadow: 0 0 16px rgba(252,238,10,0.3);
+
+    --theme-toast-bg: #fcee0a;
+    --theme-toast-text: #05050a;
+    --theme-toast-border: 2px solid #fcee0a;
+    --theme-toast-shadow: 0 0 16px rgba(252,238,10,0.3);
+
+    --theme-btn-bg: #131322;
+    --theme-btn-text: #fcee0a;
+    --theme-btn-border: 1px solid #282845;
+    --theme-btn-shadow: 0 0 16px rgba(252,238,10,0.3);
+    --theme-btn-share-bg: #fcee0a;
+    --theme-btn-share-text: #05050a;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Commodore 64 1982 (commodore64)
+ * Bordo blu royal, schermata azzurra PETSCII e 64K di memoria RAM indimenticabile
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-commodore64 {
+    --theme-bg: #40318d;
+    --theme-text: #887ecb;
+    --theme-border: 3px solid #887ecb;
+    --theme-shadow: 0 8px 0px #281d5a;
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #40318d;
+    --theme-tile-text: #887ecb;
+    --theme-tile-border: 3px solid #887ecb;
+
+    --theme-correct-bg: #a4e5ff;
+    --theme-correct-text: #40318d;
+    --theme-correct-border: 2px solid #887ecb;
+
+    --theme-present-bg: #68a941;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #887ecb;
+
+    --theme-absent-bg: #5240a6;
+    --theme-absent-text: #30246a;
+    --theme-absent-border: 2px solid #30246a;
+
+    --theme-key-bg: #5240a6;
+    --theme-key-text: #a4e5ff;
+    --theme-key-border: 2px solid #887ecb;
+    --theme-key-absent-bg: #362873;
+    --theme-key-absent-text: #6b61a3;
+
+    --theme-mode-bg: #5240a6;
+    --theme-mode-text: #887ecb;
+    --theme-mode-border: 3px solid #887ecb;
+    --theme-mode-active-bg: #a4e5ff;
+    --theme-mode-active-text: #40318d;
+
+    --theme-modal-bg: #40318d;
+    --theme-modal-text: #887ecb;
+    --theme-modal-border: 3px solid #887ecb;
+    --theme-modal-shadow: 0 8px 0px #281d5a;
+
+    --theme-toast-bg: #a4e5ff;
+    --theme-toast-text: #40318d;
+    --theme-toast-border: 3px solid #887ecb;
+    --theme-toast-shadow: 0 8px 0px #281d5a;
+
+    --theme-btn-bg: #5240a6;
+    --theme-btn-text: #a4e5ff;
+    --theme-btn-border: 2px solid #887ecb;
+    --theme-btn-shadow: 0 8px 0px #281d5a;
+    --theme-btn-share-bg: #a4e5ff;
+    --theme-btn-share-text: #40318d;
+}

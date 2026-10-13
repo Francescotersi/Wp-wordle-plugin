@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Antique Typewriter (typewriter)
+ * Tasti meccanici pesanti stile macchina da scrivere e nastro inchiostrato seppia
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-typewriter {
+    --theme-bg: #ede4d1;
+    --theme-text: #2b261f;
+    --theme-border: 2px solid #7a6e5d;
+    --theme-shadow: 2px 4px 14px rgba(80,70,50,0.15);
+    --theme-font: "Courier New", Courier, monospace;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #ede4d1;
+    --theme-tile-text: #2b261f;
+    --theme-tile-border: 2px solid #7a6e5d;
+
+    --theme-correct-bg: #2b261f;
+    --theme-correct-text: #ede4d1;
+    --theme-correct-border: 2px solid #2b261f;
+
+    --theme-present-bg: #a89078;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #7a6e5d;
+
+    --theme-absent-bg: #ded3bd;
+    --theme-absent-text: #948873;
+    --theme-absent-border: 1.5px solid #c7bba3;
+
+    --theme-key-bg: #dfd4be;
+    --theme-key-text: #2b261f;
+    --theme-key-border: 1.5px solid #7a6e5d;
+    --theme-key-absent-bg: #cfc4ad;
+    --theme-key-absent-text: #8a7d67;
+
+    --theme-mode-bg: #dfd4be;
+    --theme-mode-text: #2b261f;
+    --theme-mode-border: 2px solid #7a6e5d;
+    --theme-mode-active-bg: #2b261f;
+    --theme-mode-active-text: #ede4d1;
+
+    --theme-modal-bg: #ede4d1;
+    --theme-modal-text: #2b261f;
+    --theme-modal-border: 2px solid #7a6e5d;
+    --theme-modal-shadow: 2px 4px 14px rgba(80,70,50,0.15);
+
+    --theme-toast-bg: #2b261f;
+    --theme-toast-text: #ede4d1;
+    --theme-toast-border: 2px solid #7a6e5d;
+    --theme-toast-shadow: 2px 4px 14px rgba(80,70,50,0.15);
+
+    --theme-btn-bg: #dfd4be;
+    --theme-btn-text: #2b261f;
+    --theme-btn-border: 1.5px solid #7a6e5d;
+    --theme-btn-shadow: 2px 4px 14px rgba(80,70,50,0.15);
+    --theme-btn-share-bg: #2b261f;
+    --theme-btn-share-text: #ede4d1;
+}

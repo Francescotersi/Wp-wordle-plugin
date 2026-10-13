@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Broadsheet Daily (newspaper)
+ * Quotidiano stampato del mattino: grigio carta di giornale e inchiostro rotativa
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-newspaper {
+    --theme-bg: #eae6df;
+    --theme-text: #1a1a1a;
+    --theme-border: 2px solid #1a1a1a;
+    --theme-shadow: none;
+    --theme-font: "Times New Roman", "Baskerville", serif;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #eae6df;
+    --theme-tile-text: #1a1a1a;
+    --theme-tile-border: 2px solid #1a1a1a;
+
+    --theme-correct-bg: #1a1a1a;
+    --theme-correct-text: #eae6df;
+    --theme-correct-border: 2px solid #1a1a1a;
+
+    --theme-present-bg: #8a857b;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #1a1a1a;
+
+    --theme-absent-bg: #d4cebf;
+    --theme-absent-text: #7a756b;
+    --theme-absent-border: 1.5px solid #beb7a5;
+
+    --theme-key-bg: #ded8cd;
+    --theme-key-text: #1a1a1a;
+    --theme-key-border: 1px solid #beb7a5;
+    --theme-key-absent-bg: #ccc4b4;
+    --theme-key-absent-text: #706b61;
+
+    --theme-mode-bg: #ded8cd;
+    --theme-mode-text: #1a1a1a;
+    --theme-mode-border: 2px solid #1a1a1a;
+    --theme-mode-active-bg: #1a1a1a;
+    --theme-mode-active-text: #eae6df;
+
+    --theme-modal-bg: #eae6df;
+    --theme-modal-text: #1a1a1a;
+    --theme-modal-border: 2px solid #1a1a1a;
+    --theme-modal-shadow: none;
+
+    --theme-toast-bg: #1a1a1a;
+    --theme-toast-text: #eae6df;
+    --theme-toast-border: 2px solid #1a1a1a;
+    --theme-toast-shadow: none;
+
+    --theme-btn-bg: #ded8cd;
+    --theme-btn-text: #1a1a1a;
+    --theme-btn-border: 1px solid #beb7a5;
+    --theme-btn-shadow: none;
+    --theme-btn-share-bg: #1a1a1a;
+    --theme-btn-share-text: #eae6df;
+}

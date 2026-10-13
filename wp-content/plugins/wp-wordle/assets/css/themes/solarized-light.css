@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Solarized Light (solarized-light)
+ * Palette scientifica bilanciata di Ethan Schoonover, crema e giallo ocra d’archivio
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-solarized-light {
+    --theme-bg: #fdf6e3;
+    --theme-text: #657b83;
+    --theme-border: 1px solid #eee8d5;
+    --theme-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #fdf6e3;
+    --theme-tile-text: #657b83;
+    --theme-tile-border: 1px solid #eee8d5;
+
+    --theme-correct-bg: #859900;
+    --theme-correct-text: #fdf6e3;
+    --theme-correct-border: 1.5px solid #859900;
+
+    --theme-present-bg: #b58900;
+    --theme-present-text: #fdf6e3;
+    --theme-present-border: 1.5px solid #b58900;
+
+    --theme-absent-bg: #eee8d5;
+    --theme-absent-text: #93a1a1;
+    --theme-absent-border: 1.5px solid #e0d7c0;
+
+    --theme-key-bg: #eee8d5;
+    --theme-key-text: #657b83;
+    --theme-key-border: 1px solid #dfd7c2;
+    --theme-key-absent-bg: #e0d8c3;
+    --theme-key-absent-text: #839191;
+
+    --theme-mode-bg: #eee8d5;
+    --theme-mode-text: #657b83;
+    --theme-mode-border: 1px solid #eee8d5;
+    --theme-mode-active-bg: #859900;
+    --theme-mode-active-text: #fdf6e3;
+
+    --theme-modal-bg: #fdf6e3;
+    --theme-modal-text: #657b83;
+    --theme-modal-border: 1px solid #eee8d5;
+    --theme-modal-shadow: 0 4px 16px rgba(0,0,0,0.05);
+
+    --theme-toast-bg: #859900;
+    --theme-toast-text: #fdf6e3;
+    --theme-toast-border: 1px solid #eee8d5;
+    --theme-toast-shadow: 0 4px 16px rgba(0,0,0,0.05);
+
+    --theme-btn-bg: #eee8d5;
+    --theme-btn-text: #657b83;
+    --theme-btn-border: 1px solid #dfd7c2;
+    --theme-btn-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    --theme-btn-share-bg: #859900;
+    --theme-btn-share-text: #fdf6e3;
+}

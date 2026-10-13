@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Sahara Dune (desert)
+ * Sabbie dorate del deserto, ocra e tonalità calde di arenaria e lino naturale
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-desert {
+    --theme-bg: #f4ebd9;
+    --theme-text: #4a3525;
+    --theme-border: 1px solid #d4c4a8;
+    --theme-shadow: 0 4px 18px rgba(74,53,37,0.06);
+    --theme-font: "Georgia", serif;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #f4ebd9;
+    --theme-tile-text: #4a3525;
+    --theme-tile-border: 1px solid #d4c4a8;
+
+    --theme-correct-bg: #b87333;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #b87333;
+
+    --theme-present-bg: #d4a373;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #d4a373;
+
+    --theme-absent-bg: #e2d5be;
+    --theme-absent-text: #9c8971;
+    --theme-absent-border: 1.5px solid #cebe9f;
+
+    --theme-key-bg: #e8ddc7;
+    --theme-key-text: #4a3525;
+    --theme-key-border: 1px solid #cebe9f;
+    --theme-key-absent-bg: #d6c8b0;
+    --theme-key-absent-text: #86745d;
+
+    --theme-mode-bg: #e8ddc7;
+    --theme-mode-text: #4a3525;
+    --theme-mode-border: 1px solid #d4c4a8;
+    --theme-mode-active-bg: #b87333;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f4ebd9;
+    --theme-modal-text: #4a3525;
+    --theme-modal-border: 1px solid #d4c4a8;
+    --theme-modal-shadow: 0 4px 18px rgba(74,53,37,0.06);
+
+    --theme-toast-bg: #b87333;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #d4c4a8;
+    --theme-toast-shadow: 0 4px 18px rgba(74,53,37,0.06);
+
+    --theme-btn-bg: #e8ddc7;
+    --theme-btn-text: #4a3525;
+    --theme-btn-border: 1px solid #cebe9f;
+    --theme-btn-shadow: 0 4px 18px rgba(74,53,37,0.06);
+    --theme-btn-share-bg: #b87333;
+    --theme-btn-share-text: #ffffff;
+}

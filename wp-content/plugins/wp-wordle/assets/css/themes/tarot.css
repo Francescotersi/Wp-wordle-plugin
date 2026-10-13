@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Mystic Tarot (tarot)
+ * Carte dei tarocchi esoteriche: velluto nero mezzanotte e lamina dorata celestiale
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-tarot {
+    --theme-bg: #0c0a17;
+    --theme-text: #f3e8c8;
+    --theme-border: 2px solid #c9a227;
+    --theme-shadow: 0 0 20px rgba(201,162,39,0.25);
+    --theme-font: "Cinzel", "Georgia", serif;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #0c0a17;
+    --theme-tile-text: #f3e8c8;
+    --theme-tile-border: 2px solid #c9a227;
+
+    --theme-correct-bg: #c9a227;
+    --theme-correct-text: #0c0a17;
+    --theme-correct-border: 2px solid #e0b838;
+
+    --theme-present-bg: #7c3aed;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #c9a227;
+
+    --theme-absent-bg: #1f1b33;
+    --theme-absent-text: #6f6494;
+    --theme-absent-border: 1.5px solid #332d52;
+
+    --theme-key-bg: #181429;
+    --theme-key-text: #f3e8c8;
+    --theme-key-border: 1px solid #3d3561;
+    --theme-key-absent-bg: #110e1f;
+    --theme-key-absent-text: #534a75;
+
+    --theme-mode-bg: #181429;
+    --theme-mode-text: #f3e8c8;
+    --theme-mode-border: 2px solid #c9a227;
+    --theme-mode-active-bg: #c9a227;
+    --theme-mode-active-text: #0c0a17;
+
+    --theme-modal-bg: #0c0a17;
+    --theme-modal-text: #f3e8c8;
+    --theme-modal-border: 2px solid #c9a227;
+    --theme-modal-shadow: 0 0 20px rgba(201,162,39,0.25);
+
+    --theme-toast-bg: #c9a227;
+    --theme-toast-text: #0c0a17;
+    --theme-toast-border: 2px solid #c9a227;
+    --theme-toast-shadow: 0 0 20px rgba(201,162,39,0.25);
+
+    --theme-btn-bg: #181429;
+    --theme-btn-text: #f3e8c8;
+    --theme-btn-border: 1px solid #3d3561;
+    --theme-btn-shadow: 0 0 20px rgba(201,162,39,0.25);
+    --theme-btn-share-bg: #c9a227;
+    --theme-btn-share-text: #0c0a17;
+}

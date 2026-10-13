@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Neo-Noir Detective (neo-noir)
+ * Asfalto bagnato sotto i lampioni alogeni, fumo di sigaretta e impercettibile pioggia
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-neo-noir {
+    --theme-bg: #141416;
+    --theme-text: #e4e4e7;
+    --theme-border: 1.5px solid #3f3f46;
+    --theme-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #141416;
+    --theme-tile-text: #e4e4e7;
+    --theme-tile-border: 1.5px solid #3f3f46;
+
+    --theme-correct-bg: #f59e0b;
+    --theme-correct-text: #141416;
+    --theme-correct-border: 1.5px solid #f59e0b;
+
+    --theme-present-bg: #71717a;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #a1a1aa;
+
+    --theme-absent-bg: #27272a;
+    --theme-absent-text: #52525b;
+    --theme-absent-border: 1.5px solid #3f3f46;
+
+    --theme-key-bg: #202023;
+    --theme-key-text: #e4e4e7;
+    --theme-key-border: 1px solid #38383e;
+    --theme-key-absent-bg: #19191b;
+    --theme-key-absent-text: #4b4b54;
+
+    --theme-mode-bg: #202023;
+    --theme-mode-text: #e4e4e7;
+    --theme-mode-border: 1.5px solid #3f3f46;
+    --theme-mode-active-bg: #f59e0b;
+    --theme-mode-active-text: #141416;
+
+    --theme-modal-bg: #141416;
+    --theme-modal-text: #e4e4e7;
+    --theme-modal-border: 1.5px solid #3f3f46;
+    --theme-modal-shadow: 0 8px 30px rgba(0,0,0,0.7);
+
+    --theme-toast-bg: #f59e0b;
+    --theme-toast-text: #141416;
+    --theme-toast-border: 1.5px solid #3f3f46;
+    --theme-toast-shadow: 0 8px 30px rgba(0,0,0,0.7);
+
+    --theme-btn-bg: #202023;
+    --theme-btn-text: #e4e4e7;
+    --theme-btn-border: 1px solid #38383e;
+    --theme-btn-shadow: 0 8px 30px rgba(0,0,0,0.7);
+    --theme-btn-share-bg: #f59e0b;
+    --theme-btn-share-text: #141416;
+}

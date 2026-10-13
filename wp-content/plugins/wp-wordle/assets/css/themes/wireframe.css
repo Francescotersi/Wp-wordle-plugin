@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Tron Vector Wireframe (wireframe)
+ * Grafica vettoriale arcade 1982: linee laser al ciano elettrico nel vuoto nero
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-wireframe {
+    --theme-bg: #030508;
+    --theme-text: #00e5ff;
+    --theme-border: 2px solid #00e5ff;
+    --theme-shadow: 0 0 20px rgba(0,229,255,0.4);
+    --theme-font: "Lucida Console", "Courier New", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #030508;
+    --theme-tile-text: #00e5ff;
+    --theme-tile-border: 2px solid #00e5ff;
+
+    --theme-correct-bg: #00e5ff;
+    --theme-correct-text: #030508;
+    --theme-correct-border: 2px solid #00e5ff;
+
+    --theme-present-bg: #ff0055;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #ff0055;
+
+    --theme-absent-bg: #0d1721;
+    --theme-absent-text: #005f6b;
+    --theme-absent-border: 1.5px solid #142a3d;
+
+    --theme-key-bg: #08111a;
+    --theme-key-text: #00e5ff;
+    --theme-key-border: 1px solid #008899;
+    --theme-key-absent-bg: #040b12;
+    --theme-key-absent-text: #004752;
+
+    --theme-mode-bg: #08111a;
+    --theme-mode-text: #00e5ff;
+    --theme-mode-border: 2px solid #00e5ff;
+    --theme-mode-active-bg: #00e5ff;
+    --theme-mode-active-text: #030508;
+
+    --theme-modal-bg: #030508;
+    --theme-modal-text: #00e5ff;
+    --theme-modal-border: 2px solid #00e5ff;
+    --theme-modal-shadow: 0 0 20px rgba(0,229,255,0.4);
+
+    --theme-toast-bg: #00e5ff;
+    --theme-toast-text: #030508;
+    --theme-toast-border: 2px solid #00e5ff;
+    --theme-toast-shadow: 0 0 20px rgba(0,229,255,0.4);
+
+    --theme-btn-bg: #08111a;
+    --theme-btn-text: #00e5ff;
+    --theme-btn-border: 1px solid #008899;
+    --theme-btn-shadow: 0 0 20px rgba(0,229,255,0.4);
+    --theme-btn-share-bg: #00e5ff;
+    --theme-btn-share-text: #030508;
+}

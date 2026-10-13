@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Artisan Coffee Roastery (coffee-roast)
+ * Espresso napoletano crema nocciola, arabica tostata scura e vapore di latte caldo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-coffee-roast {
+    --theme-bg: #2b1d16;
+    --theme-text: #f5eedc;
+    --theme-border: 1.5px solid #634335;
+    --theme-shadow: 0 6px 22px rgba(0,0,0,0.4);
+    --theme-font: "Palatino", "Georgia", serif;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #2b1d16;
+    --theme-tile-text: #f5eedc;
+    --theme-tile-border: 1.5px solid #634335;
+
+    --theme-correct-bg: #b87333;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #b87333;
+
+    --theme-present-bg: #c68b59;
+    --theme-present-text: #2b1d16;
+    --theme-present-border: 1.5px solid #c68b59;
+
+    --theme-absent-bg: #3f2d24;
+    --theme-absent-text: #8a6c5b;
+    --theme-absent-border: 1.5px solid #543d31;
+
+    --theme-key-bg: #38281f;
+    --theme-key-text: #f5eedc;
+    --theme-key-border: 1px solid #543d31;
+    --theme-key-absent-bg: #271b14;
+    --theme-key-absent-text: #705646;
+
+    --theme-mode-bg: #38281f;
+    --theme-mode-text: #f5eedc;
+    --theme-mode-border: 1.5px solid #634335;
+    --theme-mode-active-bg: #b87333;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #2b1d16;
+    --theme-modal-text: #f5eedc;
+    --theme-modal-border: 1.5px solid #634335;
+    --theme-modal-shadow: 0 6px 22px rgba(0,0,0,0.4);
+
+    --theme-toast-bg: #b87333;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1.5px solid #634335;
+    --theme-toast-shadow: 0 6px 22px rgba(0,0,0,0.4);
+
+    --theme-btn-bg: #38281f;
+    --theme-btn-text: #f5eedc;
+    --theme-btn-border: 1px solid #543d31;
+    --theme-btn-shadow: 0 6px 22px rgba(0,0,0,0.4);
+    --theme-btn-share-bg: #b87333;
+    --theme-btn-share-text: #ffffff;
+}

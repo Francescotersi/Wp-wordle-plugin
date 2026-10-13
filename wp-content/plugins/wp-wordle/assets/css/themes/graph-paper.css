@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Millimeter Graph Paper (graph-paper)
+ * Quaderno di matematica con reticolo millimetrato blu e inchiostro stilografico
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-graph-paper {
+    --theme-bg: #ffffff;
+    --theme-text: #002b5c;
+    --theme-border: 2px solid #002b5c;
+    --theme-shadow: 4px 4px 0px #b0c4de;
+    --theme-font: "Consolas", "Courier New", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #ffffff;
+    --theme-tile-text: #002b5c;
+    --theme-tile-border: 2px solid #002b5c;
+
+    --theme-correct-bg: #003893;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #002b5c;
+
+    --theme-present-bg: #d9381e;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #002b5c;
+
+    --theme-absent-bg: #eef3f9;
+    --theme-absent-text: #738ba5;
+    --theme-absent-border: 1.5px solid #c2d4ea;
+
+    --theme-key-bg: #f4f8fc;
+    --theme-key-text: #002b5c;
+    --theme-key-border: 1.5px solid #002b5c;
+    --theme-key-absent-bg: #dfe8f3;
+    --theme-key-absent-text: #6882a0;
+
+    --theme-mode-bg: #f4f8fc;
+    --theme-mode-text: #002b5c;
+    --theme-mode-border: 2px solid #002b5c;
+    --theme-mode-active-bg: #003893;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #ffffff;
+    --theme-modal-text: #002b5c;
+    --theme-modal-border: 2px solid #002b5c;
+    --theme-modal-shadow: 4px 4px 0px #b0c4de;
+
+    --theme-toast-bg: #003893;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 2px solid #002b5c;
+    --theme-toast-shadow: 4px 4px 0px #b0c4de;
+
+    --theme-btn-bg: #f4f8fc;
+    --theme-btn-text: #002b5c;
+    --theme-btn-border: 1.5px solid #002b5c;
+    --theme-btn-shadow: 4px 4px 0px #b0c4de;
+    --theme-btn-share-bg: #003893;
+    --theme-btn-share-text: #ffffff;
+}

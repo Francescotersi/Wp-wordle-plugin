@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Vintage Chalkboard (chalkboard)
+ * Lavagna scolastica in ardesia scura, polvere di gesso bianco e tocchi di legno
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-chalkboard {
+    --theme-bg: #203429;
+    --theme-text: #f4f4f4;
+    --theme-border: 4px solid #5a3825;
+    --theme-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    --theme-font: "Chalkboard", "Courier New", sans-serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #203429;
+    --theme-tile-text: #f4f4f4;
+    --theme-tile-border: 4px solid #5a3825;
+
+    --theme-correct-bg: #2d5440;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #8ec5a1;
+
+    --theme-present-bg: #d9b84a;
+    --theme-present-text: #203429;
+    --theme-present-border: 2px solid #d9b84a;
+
+    --theme-absent-bg: #182920;
+    --theme-absent-text: #536d5f;
+    --theme-absent-border: 1.5px solid #243c30;
+
+    --theme-key-bg: #273e32;
+    --theme-key-text: #ffffff;
+    --theme-key-border: 1px solid #375445;
+    --theme-key-absent-bg: #17271f;
+    --theme-key-absent-text: #455b50;
+
+    --theme-mode-bg: #273e32;
+    --theme-mode-text: #ffffff;
+    --theme-mode-border: 4px solid #5a3825;
+    --theme-mode-active-bg: #d9b84a;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #203429;
+    --theme-modal-text: #f4f4f4;
+    --theme-modal-border: 4px solid #5a3825;
+    --theme-modal-shadow: 0 8px 24px rgba(0,0,0,0.3);
+
+    --theme-toast-bg: #2d5440;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 4px solid #5a3825;
+    --theme-toast-shadow: 0 8px 24px rgba(0,0,0,0.3);
+
+    --theme-btn-bg: #273e32;
+    --theme-btn-text: #ffffff;
+    --theme-btn-border: 1px solid #375445;
+    --theme-btn-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    --theme-btn-share-bg: #2d5440;
+    --theme-btn-share-text: #ffffff;
+}

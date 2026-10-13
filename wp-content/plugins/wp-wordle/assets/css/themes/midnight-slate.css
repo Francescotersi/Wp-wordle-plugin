@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Midnight Slate (midnight-slate)
+ * Titanio notturno e grafite scurissima con contrasti precisi in argento e blu cielo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-midnight-slate {
+    --theme-bg: #111317;
+    --theme-text: #e2e8f0;
+    --theme-border: 1px solid #2d3748;
+    --theme-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    --theme-font: system-ui, -apple-system, sans-serif;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #111317;
+    --theme-tile-text: #e2e8f0;
+    --theme-tile-border: 1px solid #2d3748;
+
+    --theme-correct-bg: #38bdf8;
+    --theme-correct-text: #0b1120;
+    --theme-correct-border: 1.5px solid #38bdf8;
+
+    --theme-present-bg: #a855f7;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #a855f7;
+
+    --theme-absent-bg: #1e242e;
+    --theme-absent-text: #64748b;
+    --theme-absent-border: 1.5px solid #2a323f;
+
+    --theme-key-bg: #1e242e;
+    --theme-key-text: #e2e8f0;
+    --theme-key-border: 1px solid #2a323f;
+    --theme-key-absent-bg: #171c24;
+    --theme-key-absent-text: #475569;
+
+    --theme-mode-bg: #1e242e;
+    --theme-mode-text: #e2e8f0;
+    --theme-mode-border: 1px solid #2d3748;
+    --theme-mode-active-bg: #38bdf8;
+    --theme-mode-active-text: #0b1120;
+
+    --theme-modal-bg: #111317;
+    --theme-modal-text: #e2e8f0;
+    --theme-modal-border: 1px solid #2d3748;
+    --theme-modal-shadow: 0 8px 30px rgba(0,0,0,0.5);
+
+    --theme-toast-bg: #38bdf8;
+    --theme-toast-text: #0b1120;
+    --theme-toast-border: 1px solid #2d3748;
+    --theme-toast-shadow: 0 8px 30px rgba(0,0,0,0.5);
+
+    --theme-btn-bg: #1e242e;
+    --theme-btn-text: #e2e8f0;
+    --theme-btn-border: 1px solid #2a323f;
+    --theme-btn-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    --theme-btn-share-bg: #38bdf8;
+    --theme-btn-share-text: #0b1120;
+}

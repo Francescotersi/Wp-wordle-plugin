@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Royal Baroque & Velvet (baroque)
+ * Lusso regale di Versailles: velluto bordeaux imperiale, oro lucido e cornici dorate
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-baroque {
+    --theme-bg: #24070d;
+    --theme-text: #ffd700;
+    --theme-border: 3px double #d4af37;
+    --theme-shadow: 0 8px 26px rgba(0,0,0,0.6);
+    --theme-font: "Didot", "Bodoni MT", "Cinzel", serif;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #24070d;
+    --theme-tile-text: #ffd700;
+    --theme-tile-border: 3px double #d4af37;
+
+    --theme-correct-bg: #8b0000;
+    --theme-correct-text: #ffd700;
+    --theme-correct-border: 2px solid #d4af37;
+
+    --theme-present-bg: #d4af37;
+    --theme-present-text: #24070d;
+    --theme-present-border: 2px solid #ffd700;
+
+    --theme-absent-bg: #3b1119;
+    --theme-absent-text: #8f4f5c;
+    --theme-absent-border: 1.5px solid #571b26;
+
+    --theme-key-bg: #300a12;
+    --theme-key-text: #ffd700;
+    --theme-key-border: 1.5px solid #d4af37;
+    --theme-key-absent-bg: #21060c;
+    --theme-key-absent-text: #753b47;
+
+    --theme-mode-bg: #300a12;
+    --theme-mode-text: #ffd700;
+    --theme-mode-border: 3px double #d4af37;
+    --theme-mode-active-bg: #8b0000;
+    --theme-mode-active-text: #ffd700;
+
+    --theme-modal-bg: #24070d;
+    --theme-modal-text: #ffd700;
+    --theme-modal-border: 3px double #d4af37;
+    --theme-modal-shadow: 0 8px 26px rgba(0,0,0,0.6);
+
+    --theme-toast-bg: #8b0000;
+    --theme-toast-text: #ffd700;
+    --theme-toast-border: 3px double #d4af37;
+    --theme-toast-shadow: 0 8px 26px rgba(0,0,0,0.6);
+
+    --theme-btn-bg: #300a12;
+    --theme-btn-text: #ffd700;
+    --theme-btn-border: 1.5px solid #d4af37;
+    --theme-btn-shadow: 0 8px 26px rgba(0,0,0,0.6);
+    --theme-btn-share-bg: #8b0000;
+    --theme-btn-share-text: #ffd700;
+}

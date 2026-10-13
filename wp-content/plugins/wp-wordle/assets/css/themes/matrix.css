@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Matrix Terminal (matrix)
+ * Fosfori verdi CRT su sfondo nero abisso, estetica cyberpunk da console Unix
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-matrix {
+    --theme-bg: #0a0f0a;
+    --theme-text: #00ff66;
+    --theme-border: 2px solid #00ff66;
+    --theme-shadow: 0 0 16px rgba(0,255,102,0.2);
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #0a0f0a;
+    --theme-tile-text: #00ff66;
+    --theme-tile-border: 2px solid #00ff66;
+
+    --theme-correct-bg: #00ff66;
+    --theme-correct-text: #000000;
+    --theme-correct-border: 2px solid #00ff66;
+
+    --theme-present-bg: #008833;
+    --theme-present-text: #00ff66;
+    --theme-present-border: 2px solid #00ff66;
+
+    --theme-absent-bg: #122012;
+    --theme-absent-text: #005522;
+    --theme-absent-border: 1px solid #193319;
+
+    --theme-key-bg: #0f1a0f;
+    --theme-key-text: #00ff66;
+    --theme-key-border: 1px solid #005522;
+    --theme-key-absent-bg: #080d08;
+    --theme-key-absent-text: #003311;
+
+    --theme-mode-bg: #0f1a0f;
+    --theme-mode-text: #00bb44;
+    --theme-mode-border: 2px solid #00ff66;
+    --theme-mode-active-bg: #00ff66;
+    --theme-mode-active-text: #000000;
+
+    --theme-modal-bg: #0a0f0a;
+    --theme-modal-text: #00ff66;
+    --theme-modal-border: 2px solid #00ff66;
+    --theme-modal-shadow: 0 0 16px rgba(0,255,102,0.2);
+
+    --theme-toast-bg: #00ff66;
+    --theme-toast-text: #000000;
+    --theme-toast-border: 2px solid #00ff66;
+    --theme-toast-shadow: 0 0 16px rgba(0,255,102,0.2);
+
+    --theme-btn-bg: #0f1a0f;
+    --theme-btn-text: #00ff66;
+    --theme-btn-border: 1px solid #005522;
+    --theme-btn-shadow: 0 0 16px rgba(0,255,102,0.2);
+    --theme-btn-share-bg: #00ff66;
+    --theme-btn-share-text: #000000;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Maritime Morse 1844 (morse-telegraph)
+ * Apparato telegrafico da nave: bachelite nera, tasto in ottone massiccio e impulsi radio
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-morse-telegraph {
+    --theme-bg: #1a1412;
+    --theme-text: #d4af37;
+    --theme-border: 2px solid #8c6d31;
+    --theme-shadow: 0 6px 18px rgba(0,0,0,0.55);
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #1a1412;
+    --theme-tile-text: #d4af37;
+    --theme-tile-border: 2px solid #8c6d31;
+
+    --theme-correct-bg: #8c6d31;
+    --theme-correct-text: #1a1412;
+    --theme-correct-border: 2px solid #d4af37;
+
+    --theme-present-bg: #b45309;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #d4af37;
+
+    --theme-absent-bg: #2d2420;
+    --theme-absent-text: #7a665a;
+    --theme-absent-border: 1.5px solid #45362e;
+
+    --theme-key-bg: #251c18;
+    --theme-key-text: #d4af37;
+    --theme-key-border: 1px solid #4a3a2a;
+    --theme-key-absent-bg: #1b1411;
+    --theme-key-absent-text: #5c4b3f;
+
+    --theme-mode-bg: #251c18;
+    --theme-mode-text: #d4af37;
+    --theme-mode-border: 2px solid #8c6d31;
+    --theme-mode-active-bg: #8c6d31;
+    --theme-mode-active-text: #1a1412;
+
+    --theme-modal-bg: #1a1412;
+    --theme-modal-text: #d4af37;
+    --theme-modal-border: 2px solid #8c6d31;
+    --theme-modal-shadow: 0 6px 18px rgba(0,0,0,0.55);
+
+    --theme-toast-bg: #8c6d31;
+    --theme-toast-text: #1a1412;
+    --theme-toast-border: 2px solid #8c6d31;
+    --theme-toast-shadow: 0 6px 18px rgba(0,0,0,0.55);
+
+    --theme-btn-bg: #251c18;
+    --theme-btn-text: #d4af37;
+    --theme-btn-border: 1px solid #4a3a2a;
+    --theme-btn-shadow: 0 6px 18px rgba(0,0,0,0.55);
+    --theme-btn-share-bg: #8c6d31;
+    --theme-btn-share-text: #1a1412;
+}

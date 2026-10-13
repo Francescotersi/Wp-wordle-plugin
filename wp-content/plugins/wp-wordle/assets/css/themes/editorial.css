@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Tipografia & Inchiostro (editorial)
+ * Cruciverba d’altri tempi su carta avorio vergata e inchiostro nero piombo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-editorial {
+    --theme-bg: #f8f5ee;
+    --theme-text: #191817;
+    --theme-border: 1px solid #ded7c5;
+    --theme-shadow: none;
+    --theme-font: "Charter", "Georgia", "Baskerville", serif;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #f8f5ee;
+    --theme-tile-text: #191817;
+    --theme-tile-border: 1px solid #ded7c5;
+
+    --theme-correct-bg: #191817;
+    --theme-correct-text: #f8f5ee;
+    --theme-correct-border: 1px solid #191817;
+
+    --theme-present-bg: #eae3d2;
+    --theme-present-text: #191817;
+    --theme-present-border: 2px solid #191817;
+
+    --theme-absent-bg: #e4ded0;
+    --theme-absent-text: #9c968b;
+    --theme-absent-border: 1px solid #cec7b8;
+
+    --theme-key-bg: #ede7da;
+    --theme-key-text: #191817;
+    --theme-key-border: 1px solid #d4ccc0;
+    --theme-key-absent-bg: #dbd5c8;
+    --theme-key-absent-text: #9e988d;
+
+    --theme-mode-bg: transparent;
+    --theme-mode-text: #191817;
+    --theme-mode-border: 1px solid #ded7c5;
+    --theme-mode-active-bg: #191817;
+    --theme-mode-active-text: #f8f5ee;
+
+    --theme-modal-bg: #f8f5ee;
+    --theme-modal-text: #191817;
+    --theme-modal-border: 1px solid #ded7c5;
+    --theme-modal-shadow: none;
+
+    --theme-toast-bg: #191817;
+    --theme-toast-text: #f8f5ee;
+    --theme-toast-border: 1px solid #ded7c5;
+    --theme-toast-shadow: none;
+
+    --theme-btn-bg: #ede7da;
+    --theme-btn-text: #191817;
+    --theme-btn-border: 1px solid #d4ccc0;
+    --theme-btn-shadow: none;
+    --theme-btn-share-bg: #191817;
+    --theme-btn-share-text: #f8f5ee;
+}

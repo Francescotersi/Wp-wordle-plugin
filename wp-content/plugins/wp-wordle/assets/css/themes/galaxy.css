@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Cosmic Nebula (galaxy)
+ * Spazio profondo: nebulosa viola, polvere di stelle magenta e lampo supernova
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-galaxy {
+    --theme-bg: #0b091a;
+    --theme-text: #e0d8ff;
+    --theme-border: 1.5px solid #5b21b6;
+    --theme-shadow: 0 0 22px rgba(139,92,246,0.3);
+    --theme-font: system-ui, sans-serif;
+    --theme-radius: 6px;
+
+    --theme-tile-bg: #0b091a;
+    --theme-tile-text: #e0d8ff;
+    --theme-tile-border: 1.5px solid #5b21b6;
+
+    --theme-correct-bg: #8b5cf6;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #8b5cf6;
+
+    --theme-present-bg: #ec4899;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #ec4899;
+
+    --theme-absent-bg: #1e1a38;
+    --theme-absent-text: #635b8c;
+    --theme-absent-border: 1.5px solid #2d2754;
+
+    --theme-key-bg: #17142d;
+    --theme-key-text: #e0d8ff;
+    --theme-key-border: 1px solid #322b5e;
+    --theme-key-absent-bg: #110e21;
+    --theme-key-absent-text: #4f4773;
+
+    --theme-mode-bg: #17142d;
+    --theme-mode-text: #e0d8ff;
+    --theme-mode-border: 1.5px solid #5b21b6;
+    --theme-mode-active-bg: #8b5cf6;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #0b091a;
+    --theme-modal-text: #e0d8ff;
+    --theme-modal-border: 1.5px solid #5b21b6;
+    --theme-modal-shadow: 0 0 22px rgba(139,92,246,0.3);
+
+    --theme-toast-bg: #8b5cf6;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1.5px solid #5b21b6;
+    --theme-toast-shadow: 0 0 22px rgba(139,92,246,0.3);
+
+    --theme-btn-bg: #17142d;
+    --theme-btn-text: #e0d8ff;
+    --theme-btn-border: 1px solid #322b5e;
+    --theme-btn-shadow: 0 0 22px rgba(139,92,246,0.3);
+    --theme-btn-share-bg: #8b5cf6;
+    --theme-btn-share-text: #ffffff;
+}

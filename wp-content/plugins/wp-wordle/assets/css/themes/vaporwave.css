@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Vaporwave 1995 (vaporwave)
+ * Nostalgia Windows 95, statue greche, tramonti al neon rosa pastello e ciano lilla
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-vaporwave {
+    --theme-bg: #22123b;
+    --theme-text: #ff71ce;
+    --theme-border: 2px solid #01cdfe;
+    --theme-shadow: 0 6px 20px rgba(255,113,206,0.3);
+    --theme-font: "MS Sans Serif", "Lucida Console", sans-serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #22123b;
+    --theme-tile-text: #ff71ce;
+    --theme-tile-border: 2px solid #01cdfe;
+
+    --theme-correct-bg: #01cdfe;
+    --theme-correct-text: #120b24;
+    --theme-correct-border: 2px solid #01cdfe;
+
+    --theme-present-bg: #ff71ce;
+    --theme-present-text: #120b24;
+    --theme-present-border: 2px solid #ff71ce;
+
+    --theme-absent-bg: #351c5d;
+    --theme-absent-text: #8a62bf;
+    --theme-absent-border: 1.5px solid #4a287e;
+
+    --theme-key-bg: #2d184d;
+    --theme-key-text: #05ffa1;
+    --theme-key-border: 1px solid #4a287e;
+    --theme-key-absent-bg: #1b0e30;
+    --theme-key-absent-text: #63448f;
+
+    --theme-mode-bg: #2d184d;
+    --theme-mode-text: #05ffa1;
+    --theme-mode-border: 2px solid #01cdfe;
+    --theme-mode-active-bg: #ff71ce;
+    --theme-mode-active-text: #120b24;
+
+    --theme-modal-bg: #22123b;
+    --theme-modal-text: #ff71ce;
+    --theme-modal-border: 2px solid #01cdfe;
+    --theme-modal-shadow: 0 6px 20px rgba(255,113,206,0.3);
+
+    --theme-toast-bg: #01cdfe;
+    --theme-toast-text: #120b24;
+    --theme-toast-border: 2px solid #01cdfe;
+    --theme-toast-shadow: 0 6px 20px rgba(255,113,206,0.3);
+
+    --theme-btn-bg: #2d184d;
+    --theme-btn-text: #05ffa1;
+    --theme-btn-border: 1px solid #4a287e;
+    --theme-btn-shadow: 0 6px 20px rgba(255,113,206,0.3);
+    --theme-btn-share-bg: #01cdfe;
+    --theme-btn-share-text: #120b24;
+}

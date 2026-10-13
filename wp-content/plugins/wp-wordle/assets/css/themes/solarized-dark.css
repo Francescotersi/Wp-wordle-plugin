@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Solarized Dark (solarized-dark)
+ * Il classico solarized notturno per terminali con fondo petrolio e ciano puro
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-solarized-dark {
+    --theme-bg: #002b36;
+    --theme-text: #93a1a1;
+    --theme-border: 1px solid #073642;
+    --theme-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    --theme-font: "Courier New", monospace;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #002b36;
+    --theme-tile-text: #93a1a1;
+    --theme-tile-border: 1px solid #073642;
+
+    --theme-correct-bg: #2aa198;
+    --theme-correct-text: #002b36;
+    --theme-correct-border: 1.5px solid #2aa198;
+
+    --theme-present-bg: #cb4b16;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #cb4b16;
+
+    --theme-absent-bg: #073642;
+    --theme-absent-text: #586e75;
+    --theme-absent-border: 1.5px solid #094352;
+
+    --theme-key-bg: #073642;
+    --theme-key-text: #93a1a1;
+    --theme-key-border: 1px solid #0c4d5d;
+    --theme-key-absent-bg: #052730;
+    --theme-key-absent-text: #455960;
+
+    --theme-mode-bg: #073642;
+    --theme-mode-text: #93a1a1;
+    --theme-mode-border: 1px solid #073642;
+    --theme-mode-active-bg: #2aa198;
+    --theme-mode-active-text: #002b36;
+
+    --theme-modal-bg: #002b36;
+    --theme-modal-text: #93a1a1;
+    --theme-modal-border: 1px solid #073642;
+    --theme-modal-shadow: 0 8px 24px rgba(0,0,0,0.3);
+
+    --theme-toast-bg: #2aa198;
+    --theme-toast-text: #002b36;
+    --theme-toast-border: 1px solid #073642;
+    --theme-toast-shadow: 0 8px 24px rgba(0,0,0,0.3);
+
+    --theme-btn-bg: #073642;
+    --theme-btn-text: #93a1a1;
+    --theme-btn-border: 1px solid #0c4d5d;
+    --theme-btn-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    --theme-btn-share-bg: #2aa198;
+    --theme-btn-share-text: #002b36;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Moroccan Zellij (moroccan)
+ * Mosaico geometrico arabo-andaluso: blu cobalto di Fez, zellij e terracotta smaltata
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-moroccan {
+    --theme-bg: #f9f6f0;
+    --theme-text: #1c2833;
+    --theme-border: 2px solid #0038a8;
+    --theme-shadow: 0 6px 20px rgba(0,56,168,0.1);
+    --theme-font: "Cinzel", "Palatino", serif;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #f9f6f0;
+    --theme-tile-text: #1c2833;
+    --theme-tile-border: 2px solid #0038a8;
+
+    --theme-correct-bg: #0038a8;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #002878;
+
+    --theme-present-bg: #e07a5f;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #b8543a;
+
+    --theme-absent-bg: #e8e0d5;
+    --theme-absent-text: #80776b;
+    --theme-absent-border: 1.5px solid #c9beaF;
+
+    --theme-key-bg: #eee7dc;
+    --theme-key-text: #1c2833;
+    --theme-key-border: 1px solid #bfb29f;
+    --theme-key-absent-bg: #ded3c3;
+    --theme-key-absent-text: #786d61;
+
+    --theme-mode-bg: #eee7dc;
+    --theme-mode-text: #1c2833;
+    --theme-mode-border: 2px solid #0038a8;
+    --theme-mode-active-bg: #0038a8;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f9f6f0;
+    --theme-modal-text: #1c2833;
+    --theme-modal-border: 2px solid #0038a8;
+    --theme-modal-shadow: 0 6px 20px rgba(0,56,168,0.1);
+
+    --theme-toast-bg: #0038a8;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 2px solid #0038a8;
+    --theme-toast-shadow: 0 6px 20px rgba(0,56,168,0.1);
+
+    --theme-btn-bg: #eee7dc;
+    --theme-btn-text: #1c2833;
+    --theme-btn-border: 1px solid #bfb29f;
+    --theme-btn-shadow: 0 6px 20px rgba(0,56,168,0.1);
+    --theme-btn-share-bg: #0038a8;
+    --theme-btn-share-text: #ffffff;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Autumn Leaves (autumn)
+ * Fogliame autunnale, caldarroste, sciroppo d’acero rosso e zucca speziata
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-autumn {
+    --theme-bg: #f9f4ec;
+    --theme-text: #4a2c11;
+    --theme-border: 1.5px solid #d9be9b;
+    --theme-shadow: 0 4px 18px rgba(74,44,17,0.08);
+    --theme-font: "Georgia", serif;
+    --theme-radius: 5px;
+
+    --theme-tile-bg: #f9f4ec;
+    --theme-tile-text: #4a2c11;
+    --theme-tile-border: 1.5px solid #d9be9b;
+
+    --theme-correct-bg: #993311;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #993311;
+
+    --theme-present-bg: #d97706;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #d97706;
+
+    --theme-absent-bg: #ebd9c5;
+    --theme-absent-text: #967d66;
+    --theme-absent-border: 1.5px solid #dec5ac;
+
+    --theme-key-bg: #ede0cf;
+    --theme-key-text: #4a2c11;
+    --theme-key-border: 1px solid #dec5ac;
+    --theme-key-absent-bg: #decbbe;
+    --theme-key-absent-text: #8a725b;
+
+    --theme-mode-bg: #ede0cf;
+    --theme-mode-text: #4a2c11;
+    --theme-mode-border: 1.5px solid #d9be9b;
+    --theme-mode-active-bg: #993311;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f9f4ec;
+    --theme-modal-text: #4a2c11;
+    --theme-modal-border: 1.5px solid #d9be9b;
+    --theme-modal-shadow: 0 4px 18px rgba(74,44,17,0.08);
+
+    --theme-toast-bg: #993311;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1.5px solid #d9be9b;
+    --theme-toast-shadow: 0 4px 18px rgba(74,44,17,0.08);
+
+    --theme-btn-bg: #ede0cf;
+    --theme-btn-text: #4a2c11;
+    --theme-btn-border: 1px solid #dec5ac;
+    --theme-btn-shadow: 0 4px 18px rgba(74,44,17,0.08);
+    --theme-btn-share-bg: #993311;
+    --theme-btn-share-text: #ffffff;
+}

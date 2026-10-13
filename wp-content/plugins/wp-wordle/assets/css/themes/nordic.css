@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Nordic Minimal (nordic)
+ * Estetica scandinava essenziale con verde pino boreale e blu fiordo profondo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-nordic {
+    --theme-bg: #f4f6f8;
+    --theme-text: #1e293b;
+    --theme-border: 1px solid #cbd5e1;
+    --theme-shadow: 0 6px 18px rgba(30,41,59,0.05);
+    --theme-font: system-ui, -apple-system, sans-serif;
+    --theme-radius: 6px;
+
+    --theme-tile-bg: #f4f6f8;
+    --theme-tile-text: #1e293b;
+    --theme-tile-border: 1px solid #cbd5e1;
+
+    --theme-correct-bg: #0f766e;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #0f766e;
+
+    --theme-present-bg: #0284c7;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #0284c7;
+
+    --theme-absent-bg: #e2e8f0;
+    --theme-absent-text: #94a3b8;
+    --theme-absent-border: 1.5px solid #cbd5e1;
+
+    --theme-key-bg: #e2e8f0;
+    --theme-key-text: #1e293b;
+    --theme-key-border: 1px solid #cbd5e1;
+    --theme-key-absent-bg: #cbd5e1;
+    --theme-key-absent-text: #94a3b8;
+
+    --theme-mode-bg: #e2e8f0;
+    --theme-mode-text: #475569;
+    --theme-mode-border: 1px solid #cbd5e1;
+    --theme-mode-active-bg: #0f766e;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f4f6f8;
+    --theme-modal-text: #1e293b;
+    --theme-modal-border: 1px solid #cbd5e1;
+    --theme-modal-shadow: 0 6px 18px rgba(30,41,59,0.05);
+
+    --theme-toast-bg: #0f766e;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #cbd5e1;
+    --theme-toast-shadow: 0 6px 18px rgba(30,41,59,0.05);
+
+    --theme-btn-bg: #e2e8f0;
+    --theme-btn-text: #1e293b;
+    --theme-btn-border: 1px solid #cbd5e1;
+    --theme-btn-shadow: 0 6px 18px rgba(30,41,59,0.05);
+    --theme-btn-share-bg: #0f766e;
+    --theme-btn-share-text: #ffffff;
+}

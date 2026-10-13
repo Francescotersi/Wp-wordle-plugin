@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Terracotta & Clay (terracotta)
+ * Ceramiche mediterranee, argilla cotta al sole e calda polvere di mattone
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-terracotta {
+    --theme-bg: #f7f1eb;
+    --theme-text: #3d2314;
+    --theme-border: 1px solid #e0c9b8;
+    --theme-shadow: 0 4px 18px rgba(61,35,20,0.06);
+    --theme-font: "Georgia", serif;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #f7f1eb;
+    --theme-tile-text: #3d2314;
+    --theme-tile-border: 1px solid #e0c9b8;
+
+    --theme-correct-bg: #c85a32;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #c85a32;
+
+    --theme-present-bg: #d99b66;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #d99b66;
+
+    --theme-absent-bg: #ebdcd0;
+    --theme-absent-text: #a88975;
+    --theme-absent-border: 1.5px solid #dbc5b2;
+
+    --theme-key-bg: #eee1d5;
+    --theme-key-text: #3d2314;
+    --theme-key-border: 1px solid #dbc5b2;
+    --theme-key-absent-bg: #dfd0c3;
+    --theme-key-absent-text: #977966;
+
+    --theme-mode-bg: #eee1d5;
+    --theme-mode-text: #3d2314;
+    --theme-mode-border: 1px solid #e0c9b8;
+    --theme-mode-active-bg: #c85a32;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f7f1eb;
+    --theme-modal-text: #3d2314;
+    --theme-modal-border: 1px solid #e0c9b8;
+    --theme-modal-shadow: 0 4px 18px rgba(61,35,20,0.06);
+
+    --theme-toast-bg: #c85a32;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #e0c9b8;
+    --theme-toast-shadow: 0 4px 18px rgba(61,35,20,0.06);
+
+    --theme-btn-bg: #eee1d5;
+    --theme-btn-text: #3d2314;
+    --theme-btn-border: 1px solid #dbc5b2;
+    --theme-btn-shadow: 0 4px 18px rgba(61,35,20,0.06);
+    --theme-btn-share-bg: #c85a32;
+    --theme-btn-share-text: #ffffff;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Classic Mac OS 1984 (retro-mac)
+ * System 7 e Macintosh originale: grigio platino, bordi netti e bitmap font Chicago
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-retro-mac {
+    --theme-bg: #dcd8cf;
+    --theme-text: #111111;
+    --theme-border: 2px solid #000000;
+    --theme-shadow: 3px 3px 0px #000000;
+    --theme-font: "Geneva", "Chicago", "Courier New", monospace;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #dcd8cf;
+    --theme-tile-text: #111111;
+    --theme-tile-border: 2px solid #000000;
+
+    --theme-correct-bg: #000000;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #000000;
+
+    --theme-present-bg: #777777;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #000000;
+
+    --theme-absent-bg: #c0bcb2;
+    --theme-absent-text: #555555;
+    --theme-absent-border: 1.5px solid #000000;
+
+    --theme-key-bg: #eae6dd;
+    --theme-key-text: #000000;
+    --theme-key-border: 1.5px solid #000000;
+    --theme-key-absent-bg: #b5b1a6;
+    --theme-key-absent-text: #5c5850;
+
+    --theme-mode-bg: #eae6dd;
+    --theme-mode-text: #000000;
+    --theme-mode-border: 2px solid #000000;
+    --theme-mode-active-bg: #000000;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #dcd8cf;
+    --theme-modal-text: #111111;
+    --theme-modal-border: 2px solid #000000;
+    --theme-modal-shadow: 3px 3px 0px #000000;
+
+    --theme-toast-bg: #000000;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 2px solid #000000;
+    --theme-toast-shadow: 3px 3px 0px #000000;
+
+    --theme-btn-bg: #eae6dd;
+    --theme-btn-text: #000000;
+    --theme-btn-border: 1.5px solid #000000;
+    --theme-btn-shadow: 3px 3px 0px #000000;
+    --theme-btn-share-bg: #000000;
+    --theme-btn-share-text: #ffffff;
+}

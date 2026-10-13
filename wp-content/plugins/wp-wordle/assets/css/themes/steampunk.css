@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Victorian Steampunk (steampunk)
+ * Ingranaggi di rame lucido, manometri a vapore e ottone brunito dell’era vittoriana
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-steampunk {
+    --theme-bg: #1c1510;
+    --theme-text: #e5c158;
+    --theme-border: 2px solid #b8860b;
+    --theme-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    --theme-font: "Copperplate", "Georgia", serif;
+    --theme-radius: 4px;
+
+    --theme-tile-bg: #1c1510;
+    --theme-tile-text: #e5c158;
+    --theme-tile-border: 2px solid #b8860b;
+
+    --theme-correct-bg: #b8860b;
+    --theme-correct-text: #1c1510;
+    --theme-correct-border: 2px solid #e5c158;
+
+    --theme-present-bg: #c07a3e;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #e5c158;
+
+    --theme-absent-bg: #2d221a;
+    --theme-absent-text: #8a715a;
+    --theme-absent-border: 1.5px solid #453428;
+
+    --theme-key-bg: #291e17;
+    --theme-key-text: #e5c158;
+    --theme-key-border: 1px solid #5a422f;
+    --theme-key-absent-bg: #1f1610;
+    --theme-key-absent-text: #6b5440;
+
+    --theme-mode-bg: #291e17;
+    --theme-mode-text: #e5c158;
+    --theme-mode-border: 2px solid #b8860b;
+    --theme-mode-active-bg: #b8860b;
+    --theme-mode-active-text: #1c1510;
+
+    --theme-modal-bg: #1c1510;
+    --theme-modal-text: #e5c158;
+    --theme-modal-border: 2px solid #b8860b;
+    --theme-modal-shadow: 0 6px 20px rgba(0,0,0,0.6);
+
+    --theme-toast-bg: #b8860b;
+    --theme-toast-text: #1c1510;
+    --theme-toast-border: 2px solid #b8860b;
+    --theme-toast-shadow: 0 6px 20px rgba(0,0,0,0.6);
+
+    --theme-btn-bg: #291e17;
+    --theme-btn-text: #e5c158;
+    --theme-btn-border: 1px solid #5a422f;
+    --theme-btn-shadow: 0 6px 20px rgba(0,0,0,0.6);
+    --theme-btn-share-bg: #b8860b;
+    --theme-btn-share-text: #1c1510;
+}

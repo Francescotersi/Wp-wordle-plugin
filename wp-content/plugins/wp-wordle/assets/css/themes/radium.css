@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Radium Dial 1930 (radium)
+ * Orologio militare vintage con quadrante al radio luminescente e numeri verde brillante
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-radium {
+    --theme-bg: #151914;
+    --theme-text: #4ade80;
+    --theme-border: 2px solid #22c55e;
+    --theme-shadow: 0 0 18px rgba(74,222,128,0.25);
+    --theme-font: "Trebuchet MS", "Courier New", monospace;
+    --theme-radius: 1px;
+
+    --theme-tile-bg: #151914;
+    --theme-tile-text: #4ade80;
+    --theme-tile-border: 2px solid #22c55e;
+
+    --theme-correct-bg: #22c55e;
+    --theme-correct-text: #151914;
+    --theme-correct-border: 2px solid #4ade80;
+
+    --theme-present-bg: #eab308;
+    --theme-present-text: #151914;
+    --theme-present-border: 2px solid #fde047;
+
+    --theme-absent-bg: #232a22;
+    --theme-absent-text: #526651;
+    --theme-absent-border: 1.5px solid #333d32;
+
+    --theme-key-bg: #1d241c;
+    --theme-key-text: #4ade80;
+    --theme-key-border: 1px solid #334231;
+    --theme-key-absent-bg: #171c16;
+    --theme-key-absent-text: #3e4d3c;
+
+    --theme-mode-bg: #1d241c;
+    --theme-mode-text: #4ade80;
+    --theme-mode-border: 2px solid #22c55e;
+    --theme-mode-active-bg: #22c55e;
+    --theme-mode-active-text: #151914;
+
+    --theme-modal-bg: #151914;
+    --theme-modal-text: #4ade80;
+    --theme-modal-border: 2px solid #22c55e;
+    --theme-modal-shadow: 0 0 18px rgba(74,222,128,0.25);
+
+    --theme-toast-bg: #22c55e;
+    --theme-toast-text: #151914;
+    --theme-toast-border: 2px solid #22c55e;
+    --theme-toast-shadow: 0 0 18px rgba(74,222,128,0.25);
+
+    --theme-btn-bg: #1d241c;
+    --theme-btn-text: #4ade80;
+    --theme-btn-border: 1px solid #334231;
+    --theme-btn-shadow: 0 0 18px rgba(74,222,128,0.25);
+    --theme-btn-share-bg: #22c55e;
+    --theme-btn-share-text: #151914;
+}

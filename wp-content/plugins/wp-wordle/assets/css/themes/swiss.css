@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Swiss International Style (swiss)
+ * Modernismo svizzero 1957, rigore geometrico, grigio ghiaccio e colori primari
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-swiss {
+    --theme-bg: #f8f9fa;
+    --theme-text: #111111;
+    --theme-border: 1px solid #e5e5e5;
+    --theme-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    --theme-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #f8f9fa;
+    --theme-tile-text: #111111;
+    --theme-tile-border: 1px solid #e5e5e5;
+
+    --theme-correct-bg: #e63946;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 2px solid #e63946;
+
+    --theme-present-bg: #1d3557;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #1d3557;
+
+    --theme-absent-bg: #e8ecef;
+    --theme-absent-text: #8d99ae;
+    --theme-absent-border: 2px solid #e8ecef;
+
+    --theme-key-bg: #e9ecef;
+    --theme-key-text: #111111;
+    --theme-key-border: none;
+    --theme-key-absent-bg: #dce1e6;
+    --theme-key-absent-text: #9aa5b1;
+
+    --theme-mode-bg: transparent;
+    --theme-mode-text: #666666;
+    --theme-mode-border: 1px solid #e5e5e5;
+    --theme-mode-active-bg: #111111;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #f8f9fa;
+    --theme-modal-text: #111111;
+    --theme-modal-border: 1px solid #e5e5e5;
+    --theme-modal-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+    --theme-toast-bg: #e63946;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #e5e5e5;
+    --theme-toast-shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+    --theme-btn-bg: #e9ecef;
+    --theme-btn-text: #111111;
+    --theme-btn-border: none;
+    --theme-btn-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    --theme-btn-share-bg: #e63946;
+    --theme-btn-share-text: #ffffff;
+}

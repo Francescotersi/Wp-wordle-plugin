@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: 1920s Art Déco Gatsby (art-deco)
+ * Grand Gatsby ruggenti anni ’20: nero ossidiana lucido e filigrana in oro zecchino
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-art-deco {
+    --theme-bg: #0c0d10;
+    --theme-text: #dfb15b;
+    --theme-border: 2px solid #dfb15b;
+    --theme-shadow: 0 0 18px rgba(223,177,91,0.25);
+    --theme-font: "Didot", "Bodoni MT", "Cinzel", serif;
+    --theme-radius: 1px;
+
+    --theme-tile-bg: #0c0d10;
+    --theme-tile-text: #dfb15b;
+    --theme-tile-border: 2px solid #dfb15b;
+
+    --theme-correct-bg: #dfb15b;
+    --theme-correct-text: #0c0d10;
+    --theme-correct-border: 2px solid #dfb15b;
+
+    --theme-present-bg: #93733a;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #dfb15b;
+
+    --theme-absent-bg: #1c1e24;
+    --theme-absent-text: #635d4d;
+    --theme-absent-border: 1.5px solid #2d2f38;
+
+    --theme-key-bg: #16171d;
+    --theme-key-text: #dfb15b;
+    --theme-key-border: 1px solid #3d3b33;
+    --theme-key-absent-bg: #0e0f13;
+    --theme-key-absent-text: #524b3c;
+
+    --theme-mode-bg: #16171d;
+    --theme-mode-text: #dfb15b;
+    --theme-mode-border: 2px solid #dfb15b;
+    --theme-mode-active-bg: #dfb15b;
+    --theme-mode-active-text: #0c0d10;
+
+    --theme-modal-bg: #0c0d10;
+    --theme-modal-text: #dfb15b;
+    --theme-modal-border: 2px solid #dfb15b;
+    --theme-modal-shadow: 0 0 18px rgba(223,177,91,0.25);
+
+    --theme-toast-bg: #dfb15b;
+    --theme-toast-text: #0c0d10;
+    --theme-toast-border: 2px solid #dfb15b;
+    --theme-toast-shadow: 0 0 18px rgba(223,177,91,0.25);
+
+    --theme-btn-bg: #16171d;
+    --theme-btn-text: #dfb15b;
+    --theme-btn-border: 1px solid #3d3b33;
+    --theme-btn-shadow: 0 0 18px rgba(223,177,91,0.25);
+    --theme-btn-share-bg: #dfb15b;
+    --theme-btn-share-text: #0c0d10;
+}

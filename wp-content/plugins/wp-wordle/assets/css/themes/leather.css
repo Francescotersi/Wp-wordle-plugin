@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Leather Journal (leather)
+ * Diario da viaggio in cuoio brunito, caratteri impressi a caldo e fogli antichi
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-leather {
+    --theme-bg: #eadecb;
+    --theme-text: #2b1d0c;
+    --theme-border: 2px solid #6b4c2b;
+    --theme-shadow: 0 6px 20px rgba(43,29,12,0.15);
+    --theme-font: "Baskerville", "Georgia", serif;
+    --theme-radius: 5px;
+
+    --theme-tile-bg: #eadecb;
+    --theme-tile-text: #2b1d0c;
+    --theme-tile-border: 2px solid #6b4c2b;
+
+    --theme-correct-bg: #593a1c;
+    --theme-correct-text: #f3eadb;
+    --theme-correct-border: 2px solid #593a1c;
+
+    --theme-present-bg: #b28139;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #6b4c2b;
+
+    --theme-absent-bg: #d8c8b0;
+    --theme-absent-text: #8c7356;
+    --theme-absent-border: 1.5px solid #bea98d;
+
+    --theme-key-bg: #dccbb3;
+    --theme-key-text: #2b1d0c;
+    --theme-key-border: 1px solid #bea98d;
+    --theme-key-absent-bg: #ccbaa1;
+    --theme-key-absent-text: #796347;
+
+    --theme-mode-bg: #dccbb3;
+    --theme-mode-text: #2b1d0c;
+    --theme-mode-border: 2px solid #6b4c2b;
+    --theme-mode-active-bg: #593a1c;
+    --theme-mode-active-text: #f3eadb;
+
+    --theme-modal-bg: #eadecb;
+    --theme-modal-text: #2b1d0c;
+    --theme-modal-border: 2px solid #6b4c2b;
+    --theme-modal-shadow: 0 6px 20px rgba(43,29,12,0.15);
+
+    --theme-toast-bg: #593a1c;
+    --theme-toast-text: #f3eadb;
+    --theme-toast-border: 2px solid #6b4c2b;
+    --theme-toast-shadow: 0 6px 20px rgba(43,29,12,0.15);
+
+    --theme-btn-bg: #dccbb3;
+    --theme-btn-text: #2b1d0c;
+    --theme-btn-border: 1px solid #bea98d;
+    --theme-btn-shadow: 0 6px 20px rgba(43,29,12,0.15);
+    --theme-btn-share-bg: #593a1c;
+    --theme-btn-share-text: #f3eadb;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Medieval Parchment (parchment)
+ * Manoscritto miniato del XIII secolo: pergamena vellutata e inchiostri amanuensi
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-parchment {
+    --theme-bg: #f3e9d2;
+    --theme-text: #38220f;
+    --theme-border: 2px solid #8c6d48;
+    --theme-shadow: 3px 4px 12px rgba(56,34,15,0.18);
+    --theme-font: "Baskerville", "Palatino Linotype", serif;
+    --theme-radius: 2px;
+
+    --theme-tile-bg: #f3e9d2;
+    --theme-tile-text: #38220f;
+    --theme-tile-border: 2px solid #8c6d48;
+
+    --theme-correct-bg: #6a1a24;
+    --theme-correct-text: #f3e9d2;
+    --theme-correct-border: 2px solid #4a1219;
+
+    --theme-present-bg: #b07d39;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #7d5724;
+
+    --theme-absent-bg: #e2d4b7;
+    --theme-absent-text: #968165;
+    --theme-absent-border: 1.5px solid #c9b793;
+
+    --theme-key-bg: #e5d9bd;
+    --theme-key-text: #38220f;
+    --theme-key-border: 1.5px solid #a88d67;
+    --theme-key-absent-bg: #d4c7a7;
+    --theme-key-absent-text: #8a765a;
+
+    --theme-mode-bg: #e5d9bd;
+    --theme-mode-text: #38220f;
+    --theme-mode-border: 2px solid #8c6d48;
+    --theme-mode-active-bg: #6a1a24;
+    --theme-mode-active-text: #f3e9d2;
+
+    --theme-modal-bg: #f3e9d2;
+    --theme-modal-text: #38220f;
+    --theme-modal-border: 2px solid #8c6d48;
+    --theme-modal-shadow: 3px 4px 12px rgba(56,34,15,0.18);
+
+    --theme-toast-bg: #6a1a24;
+    --theme-toast-text: #f3e9d2;
+    --theme-toast-border: 2px solid #8c6d48;
+    --theme-toast-shadow: 3px 4px 12px rgba(56,34,15,0.18);
+
+    --theme-btn-bg: #e5d9bd;
+    --theme-btn-text: #38220f;
+    --theme-btn-border: 1.5px solid #a88d67;
+    --theme-btn-shadow: 3px 4px 12px rgba(56,34,15,0.18);
+    --theme-btn-share-bg: #6a1a24;
+    --theme-btn-share-text: #f3e9d2;
+}

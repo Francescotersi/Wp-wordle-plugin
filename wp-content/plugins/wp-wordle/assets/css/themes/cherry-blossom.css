@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Kyoto Sakura (cherry-blossom)
+ * Fioritura dei ciliegi primaverile a Kyoto: petali rosa soffice e inchiostro sumi
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-cherry-blossom {
+    --theme-bg: #fdf2f4;
+    --theme-text: #4c2c35;
+    --theme-border: 1px solid #f3c1cb;
+    --theme-shadow: 0 4px 18px rgba(243,193,203,0.3);
+    --theme-font: "Hiragino Mincho ProN", "Yu Mincho", "Georgia", serif;
+    --theme-radius: 8px;
+
+    --theme-tile-bg: #fdf2f4;
+    --theme-tile-text: #4c2c35;
+    --theme-tile-border: 1px solid #f3c1cb;
+
+    --theme-correct-bg: #db2777;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #db2777;
+
+    --theme-present-bg: #f472b6;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #f472b6;
+
+    --theme-absent-bg: #ebd2d8;
+    --theme-absent-text: #9a707a;
+    --theme-absent-border: 1.5px solid #dfbcc4;
+
+    --theme-key-bg: #f8e1e6;
+    --theme-key-text: #4c2c35;
+    --theme-key-border: 1px solid #dfbcc4;
+    --theme-key-absent-bg: #e8cbce;
+    --theme-key-absent-text: #8f6871;
+
+    --theme-mode-bg: #f8e1e6;
+    --theme-mode-text: #4c2c35;
+    --theme-mode-border: 1px solid #f3c1cb;
+    --theme-mode-active-bg: #db2777;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #fdf2f4;
+    --theme-modal-text: #4c2c35;
+    --theme-modal-border: 1px solid #f3c1cb;
+    --theme-modal-shadow: 0 4px 18px rgba(243,193,203,0.3);
+
+    --theme-toast-bg: #db2777;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1px solid #f3c1cb;
+    --theme-toast-shadow: 0 4px 18px rgba(243,193,203,0.3);
+
+    --theme-btn-bg: #f8e1e6;
+    --theme-btn-text: #4c2c35;
+    --theme-btn-border: 1px solid #dfbcc4;
+    --theme-btn-shadow: 0 4px 18px rgba(243,193,203,0.3);
+    --theme-btn-share-bg: #db2777;
+    --theme-btn-share-text: #ffffff;
+}

@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: VHS Tape Glitch (glitch)
+ * Nastro magnetico VHS logorato: tracciamento video fuori asse, ciano e aberrazione cromatica
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-glitch {
+    --theme-bg: #111019;
+    --theme-text: #00f0ff;
+    --theme-border: 2px solid #ff0055;
+    --theme-shadow: 3px 3px 0px #00f0ff, -3px -3px 0px #ff0055;
+    --theme-font: "Consolas", monospace;
+    --theme-radius: 0px;
+
+    --theme-tile-bg: #111019;
+    --theme-tile-text: #00f0ff;
+    --theme-tile-border: 2px solid #ff0055;
+
+    --theme-correct-bg: #00f0ff;
+    --theme-correct-text: #111019;
+    --theme-correct-border: 2px solid #00f0ff;
+
+    --theme-present-bg: #ff0055;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 2px solid #ff0055;
+
+    --theme-absent-bg: #242233;
+    --theme-absent-text: #69648a;
+    --theme-absent-border: 1.5px solid #36324d;
+
+    --theme-key-bg: #1a1926;
+    --theme-key-text: #00f0ff;
+    --theme-key-border: 1px solid #ff0055;
+    --theme-key-absent-bg: #14131d;
+    --theme-key-absent-text: #534f6e;
+
+    --theme-mode-bg: #1a1926;
+    --theme-mode-text: #00f0ff;
+    --theme-mode-border: 2px solid #ff0055;
+    --theme-mode-active-bg: #ff0055;
+    --theme-mode-active-text: #111019;
+
+    --theme-modal-bg: #111019;
+    --theme-modal-text: #00f0ff;
+    --theme-modal-border: 2px solid #ff0055;
+    --theme-modal-shadow: 3px 3px 0px #00f0ff, -3px -3px 0px #ff0055;
+
+    --theme-toast-bg: #00f0ff;
+    --theme-toast-text: #111019;
+    --theme-toast-border: 2px solid #ff0055;
+    --theme-toast-shadow: 3px 3px 0px #00f0ff, -3px -3px 0px #ff0055;
+
+    --theme-btn-bg: #1a1926;
+    --theme-btn-text: #00f0ff;
+    --theme-btn-border: 1px solid #ff0055;
+    --theme-btn-shadow: 3px 3px 0px #00f0ff, -3px -3px 0px #ff0055;
+    --theme-btn-share-bg: #00f0ff;
+    --theme-btn-share-text: #111019;
+}

@@ -14,21 +14,22 @@
             apiUrl: container.dataset.api || '/wp-json/wp-wordle/v1/',
             nonce: container.dataset.nonce || '',
             mode: container.dataset.mode || 'daily',
-            lang: container.dataset.lang || 'it',
+            lang: container.dataset.lang || 'en',
             i18n: {
-                winTitle: 'Splendid!',
-                lossTitle: 'Game Over',
+                winTitle: 'SPLENDID!',
+                lossTitle: 'GAME OVER',
                 solutionLabel: 'The word was:',
                 copied: 'Copied to clipboard',
                 notEnoughLetters: 'Not enough letters',
                 invalidWord: 'Not in word list',
+                connectionError: 'Connection error',
                 share: 'Share',
                 newGame: 'Play Again',
             }
         };
 
         let mode = config.mode || 'daily';
-        let lang = config.lang || 'it';
+        let lang = config.lang || 'en';
         let token = null;
         let currentRow = 0;
         let currentTile = 0;
@@ -52,8 +53,9 @@
 
         function getStats() {
             const defaultStats = { played: 0, wins: 0, currentStreak: 0, maxStreak: 0 };
+            const key = mode === 'practice' ? `wp_wordle_stats_${lang}_practice` : `wp_wordle_stats_${lang}`;
             try {
-                return JSON.parse(localStorage.getItem(`wp_wordle_stats_${lang}`)) || defaultStats;
+                return JSON.parse(localStorage.getItem(key)) || defaultStats;
             } catch (e) {
                 return defaultStats;
             }
@@ -61,6 +63,7 @@
 
         function saveStats(won) {
             const stats = getStats();
+            const key = mode === 'practice' ? `wp_wordle_stats_${lang}_practice` : `wp_wordle_stats_${lang}`;
             stats.played++;
             if (won) {
                 stats.wins++;
@@ -69,7 +72,7 @@
             } else {
                 stats.currentStreak = 0;
             }
-            localStorage.setItem(`wp_wordle_stats_${lang}`, JSON.stringify(stats));
+            localStorage.setItem(key, JSON.stringify(stats));
             updateStatsModal(stats);
         }
 
@@ -256,7 +259,7 @@
                 });
 
             } catch (err) {
-                showToast('Connection error');
+                showToast(config.i18n.connectionError || 'Connection error');
                 isSubmitting = false;
             }
         }
@@ -333,10 +336,28 @@
                     shareText += '\n';
                 });
 
-                if (navigator.clipboard) {
+                function copyFallback(text) {
+                    const ta = document.createElement('textarea');
+                    ta.value = text;
+                    ta.style.position = 'fixed';
+                    ta.style.opacity = '0';
+                    document.body.appendChild(ta);
+                    ta.select();
+                    try {
+                        document.execCommand('copy');
+                        showToast(config.i18n.copied);
+                    } catch (e) {}
+                    ta.remove();
+                }
+
+                if (navigator.clipboard && navigator.clipboard.writeText) {
                     navigator.clipboard.writeText(shareText).then(() => {
                         showToast(config.i18n.copied);
+                    }).catch(() => {
+                        copyFallback(shareText);
                     });
+                } else {
+                    copyFallback(shareText);
                 }
             });
         }

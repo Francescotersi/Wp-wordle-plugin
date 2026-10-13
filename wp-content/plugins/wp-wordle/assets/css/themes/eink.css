@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: E-Ink / Paperwhite (eink)
+ * Schermo Kindle a 16 livelli di grigio opaco per zero affaticamento visivo
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-eink {
+    --theme-bg: #e8e5dd;
+    --theme-text: #21201d;
+    --theme-border: 1px solid #cac6bb;
+    --theme-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    --theme-font: "Charter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #e8e5dd;
+    --theme-tile-text: #21201d;
+    --theme-tile-border: 1px solid #cac6bb;
+
+    --theme-correct-bg: #232220;
+    --theme-correct-text: #f6f4ee;
+    --theme-correct-border: 1.5px solid #232220;
+
+    --theme-present-bg: #75726b;
+    --theme-present-text: #f6f4ee;
+    --theme-present-border: 1.5px solid #75726b;
+
+    --theme-absent-bg: #d5d1c7;
+    --theme-absent-text: #8c887e;
+    --theme-absent-border: 1.5px solid #c0bcb2;
+
+    --theme-key-bg: #d8d4ca;
+    --theme-key-text: #242320;
+    --theme-key-border: 1px solid #bcb8ac;
+    --theme-key-absent-bg: #cac5ba;
+    --theme-key-absent-text: #8e8a81;
+
+    --theme-mode-bg: #d9d5cc;
+    --theme-mode-text: #4a4740;
+    --theme-mode-border: 1px solid #cac6bb;
+    --theme-mode-active-bg: #232220;
+    --theme-mode-active-text: #f6f4ee;
+
+    --theme-modal-bg: #e8e5dd;
+    --theme-modal-text: #21201d;
+    --theme-modal-border: 1px solid #cac6bb;
+    --theme-modal-shadow: 0 4px 16px rgba(0,0,0,0.06);
+
+    --theme-toast-bg: #232220;
+    --theme-toast-text: #f6f4ee;
+    --theme-toast-border: 1px solid #cac6bb;
+    --theme-toast-shadow: 0 4px 16px rgba(0,0,0,0.06);
+
+    --theme-btn-bg: #d8d4ca;
+    --theme-btn-text: #242320;
+    --theme-btn-border: 1px solid #bcb8ac;
+    --theme-btn-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    --theme-btn-share-bg: #232220;
+    --theme-btn-share-text: #f6f4ee;
+}

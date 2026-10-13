@@ -1,0 +1,58 @@
+/**
+ * WP Wordle Theme: Neon Tokyo Rain (neon-tokyo)
+ * Shinjuku sotto la pioggia battente: riflessi asfalto scuro e insegne kanji al neon
+ */
+
+.wp-wordle-wrapper.wp-wordle-theme-neon-tokyo {
+    --theme-bg: #080b12;
+    --theme-text: #22d3ee;
+    --theme-border: 1.5px solid #ec4899;
+    --theme-shadow: 0 0 24px rgba(236,72,153,0.3);
+    --theme-font: "Hiragino Kaku Gothic Pro", system-ui, sans-serif;
+    --theme-radius: 3px;
+
+    --theme-tile-bg: #080b12;
+    --theme-tile-text: #22d3ee;
+    --theme-tile-border: 1.5px solid #ec4899;
+
+    --theme-correct-bg: #10b981;
+    --theme-correct-text: #ffffff;
+    --theme-correct-border: 1.5px solid #10b981;
+
+    --theme-present-bg: #f43f5e;
+    --theme-present-text: #ffffff;
+    --theme-present-border: 1.5px solid #f43f5e;
+
+    --theme-absent-bg: #182030;
+    --theme-absent-text: #4f6080;
+    --theme-absent-border: 1.5px solid #23304a;
+
+    --theme-key-bg: #121927;
+    --theme-key-text: #22d3ee;
+    --theme-key-border: 1px solid #283754;
+    --theme-key-absent-bg: #0d1320;
+    --theme-key-absent-text: #3c4c6b;
+
+    --theme-mode-bg: #121927;
+    --theme-mode-text: #22d3ee;
+    --theme-mode-border: 1.5px solid #ec4899;
+    --theme-mode-active-bg: #ec4899;
+    --theme-mode-active-text: #ffffff;
+
+    --theme-modal-bg: #080b12;
+    --theme-modal-text: #22d3ee;
+    --theme-modal-border: 1.5px solid #ec4899;
+    --theme-modal-shadow: 0 0 24px rgba(236,72,153,0.3);
+
+    --theme-toast-bg: #10b981;
+    --theme-toast-text: #ffffff;
+    --theme-toast-border: 1.5px solid #ec4899;
+    --theme-toast-shadow: 0 0 24px rgba(236,72,153,0.3);
+
+    --theme-btn-bg: #121927;
+    --theme-btn-text: #22d3ee;
+    --theme-btn-border: 1px solid #283754;
+    --theme-btn-shadow: 0 0 24px rgba(236,72,153,0.3);
+    --theme-btn-share-bg: #10b981;
+    --theme-btn-share-text: #ffffff;
+}
